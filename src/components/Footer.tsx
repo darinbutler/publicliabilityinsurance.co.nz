@@ -146,33 +146,52 @@ export default function Footer() {
         </div>
 
         {/* Trust Badges */}
-        <div className="border-t border-slate-800 pt-8 mb-8">
-          <p className="text-slate-500 text-xs mb-4">TRUSTED BY NZ BUSINESSES</p>
-          <div className="flex flex-wrap gap-6 text-slate-400 text-xs">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-slate-800 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                ✓
+        <div className="border-t border-slate-800 pt-10 mb-10">
+          <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-6">
+            Trusted by NZ Businesses
+          </p>
+          <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+            {[
+              {
+                label: 'FSP Compliant',
+                icon: (
+                  <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                ),
+              },
+              {
+                label: 'Instant Quotes',
+                icon: (
+                  <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                ),
+              },
+              {
+                label: 'Expert Support',
+                icon: (
+                  <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                ),
+              },
+              {
+                label: '100% Secure',
+                icon: (
+                  <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                ),
+              },
+            ].map((badge) => (
+              <div key={badge.label} className="flex flex-col items-center text-center">
+                <div className="w-14 h-14 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center mb-2">
+                  {badge.icon}
+                </div>
+                <p className="text-slate-300 text-xs font-medium">{badge.label}</p>
               </div>
-              <p>FSP Compliant</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-slate-800 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                ✓
-              </div>
-              <p>Instant Quotes</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-slate-800 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                ✓
-              </div>
-              <p>Expert Support</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-slate-800 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                ✓
-              </div>
-              <p>100% Secure</p>
-            </div>
+            ))}
           </div>
         </div>
 
