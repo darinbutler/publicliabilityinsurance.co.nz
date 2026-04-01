@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     locale: 'en_NZ',
     images: [
       {
-        url: 'https://publicliability.co.nz/og-image.jpg',
+        url: 'https://publicliabilityinsurance.co.nz/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Public Liability Insurance Comparison',
@@ -38,7 +38,7 @@ export default function Home() {
             '@type': 'LocalBusiness',
             name: 'PublicLiability.co.nz',
             description: 'NZ Public Liability Insurance Comparison Service',
-            url: 'https://publicliability.co.nz',
+            url: 'https://publicliabilityinsurance.co.nz',
             areaServed: 'NZ',
             aggregateRating: {
               '@type': 'AggregateRating',
