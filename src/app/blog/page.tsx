@@ -17,14 +17,30 @@ export default function BlogPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Insurance Insights & Guides
+      {/* Hero Section — full-width background image */}
+      <section className="relative w-full min-h-[45vh] flex items-center">
+        <img
+          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&h=900&fit=crop&q=80"
+          alt="Business professionals collaborating in a modern office"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/75 to-slate-900/50"></div>
+
+        <div className="max-w-6xl mx-auto w-full relative z-10 px-4 py-20 md:py-24">
+          <p className="text-emerald-400 font-semibold text-sm uppercase tracking-widest mb-4">
+            Knowledge Hub
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight max-w-3xl">
+            Insurance Insights &amp; Guides
           </h1>
-          <p className="text-xl text-blue-100">
-            Expert articles on public liability insurance, coverage tips, and NZ business protection strategies.
+          <p className="text-xl text-slate-200 mb-4 leading-relaxed max-w-2xl">
+            Expert articles on public liability insurance, coverage tips, and business protection
+            strategies for New Zealand businesses of every size.
+          </p>
+          <p className="text-slate-300 max-w-2xl">
+            Whether you&apos;re a sole trader exploring your first policy or a large contractor
+            reviewing your cover, our guides help you make informed decisions.
           </p>
         </div>
       </section>
