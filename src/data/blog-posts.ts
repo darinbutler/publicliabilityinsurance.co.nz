@@ -17,6 +17,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-03-15',
     category: 'Guides',
     author: 'Public Liability Insurance Team',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=450&fit=crop&q=80',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>What is Public Liability Insurance?</h2>
@@ -58,6 +59,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-03-08',
     category: 'Guides',
     author: 'Public Liability Insurance Team',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=450&fit=crop&q=80',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>Assessing Your Coverage Needs</h2>
@@ -122,6 +124,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-28',
     category: 'Guides',
     author: 'Public Liability Insurance Team',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848e66ad76?w=800&h=450&fit=crop&q=80',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>Understanding the Key Differences</h2>
@@ -188,6 +191,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-20',
     category: 'Industry Insights',
     author: 'Public Liability Insurance Team',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=450&fit=crop&q=80',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>Real Claims, Real Costs</h2>
@@ -238,6 +242,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-10',
     category: 'Industry Insights',
     author: 'Public Liability Insurance Team',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=450&fit=crop&q=80',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>The Shift to Higher Coverage</h2>
@@ -308,6 +313,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-01',
     category: 'Industry Insights',
     author: 'Public Liability Insurance Team',
+    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=450&fit=crop&q=80',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>The Duty of Care in Education</h2>

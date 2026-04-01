@@ -57,9 +57,9 @@ export default function BlogPage() {
                 key={post.slug}
                 className="bg-white rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg hover:border-blue-500 transition-all duration-300"
               >
-                {/* Image Placeholder */}
+                {/* Post image */}
                 <img
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=450&fit=crop&q=80"
+                  src={post.image || 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=450&fit=crop&q=80'}
                   alt={post.title}
                   className="w-full h-48 object-cover"
                   loading="lazy"

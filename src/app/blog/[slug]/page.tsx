@@ -93,9 +93,9 @@ export default function BlogPostPage({ params }: Props) {
         <div className="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Article Content */}
           <article className="lg:col-span-2">
-            {/* Featured Image Placeholder */}
+            {/* Featured Image */}
             <img
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=675&fit=crop&q=80"
+              src={post.image ? post.image.replace('w=800&h=450', 'w=1200&h=675') : 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=675&fit=crop&q=80'}
               alt={post.title}
               className="w-full h-96 object-cover rounded-lg mb-8"
               loading="lazy"
