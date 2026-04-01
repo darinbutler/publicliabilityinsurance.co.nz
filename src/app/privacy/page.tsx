@@ -31,7 +31,7 @@ export default function PrivacyPage() {
 
           <h2>1. Introduction</h2>
           <p>
-            Public Liability Insurance Limited ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, contact us, or use our services.
+            Public Liability Insurance ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, contact us, or use our services.
           </p>
           <p>
             Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our services.
@@ -164,7 +164,7 @@ export default function PrivacyPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
             <p>
-              <strong>Public Liability Insurance Limited</strong><br />
+              <strong>Public Liability Insurance</strong><br />
               Auckland, New Zealand<br />
               Email: <a href="mailto:privacy@cover4you.co.nz" className="text-blue-600 hover:text-blue-700">privacy@cover4you.co.nz</a><br />
               Phone: <a href="tel:098859549" className="text-blue-600 hover:text-blue-700">09 885 9549</a>

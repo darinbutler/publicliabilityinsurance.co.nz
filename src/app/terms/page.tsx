@@ -162,7 +162,7 @@ export default function TermsPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
             <p>
-              <strong>Public Liability Insurance Limited</strong><br />
+              <strong>Public Liability Insurance</strong><br />
               Auckland, New Zealand<br />
               Email: <a href="mailto:legal@cover4you.co.nz" className="text-blue-600 hover:text-blue-700">legal@cover4you.co.nz</a><br />
               Phone: <a href="tel:098859549" className="text-blue-600 hover:text-blue-700">09 885 9549</a>
