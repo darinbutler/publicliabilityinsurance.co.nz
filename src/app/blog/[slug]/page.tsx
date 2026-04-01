@@ -246,57 +246,123 @@ export default function BlogPostPage({ params }: Props) {
               </div>
             )}
 
-            {/* Quick Links */}
-            <div className="bg-slate-50 rounded-2xl p-6">
-              <h3 className="font-bold text-slate-900 mb-4">Explore</h3>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <Link href="/coverage" className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1">
-                    <span>→</span> Coverage Guide
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/compare" className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1">
-                    <span>→</span> Compare Insurers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1">
-                    <span>→</span> About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1">
-                    <span>→</span> Contact Us
-                  </Link>
-                </li>
-              </ul>
+            {/* Other Resources — Visual Cards */}
+            <div>
+              <h3 className="text-lg font-bold text-slate-900 mb-4">Other Resources</h3>
+              <div className="space-y-3">
+                {/* Coverage Guide */}
+                <Link
+                  href="/coverage"
+                  className="group block bg-gradient-to-br from-emerald-50 to-sky-50 border border-emerald-200/60 rounded-2xl p-5 hover:shadow-lg hover:border-emerald-300 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center flex-shrink-0 shadow-md shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-sm group-hover:text-emerald-700 transition-colors">Coverage Guide</h4>
+                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">Compare $1M–$20M tiers and what each level covers</p>
+                    </div>
+                  </div>
+                </Link>
 
-              <div className="border-t border-slate-200 mt-4 pt-4">
-                <h4 className="font-bold text-slate-900 mb-3 text-sm">NZ Regulatory Bodies</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>
-                    <a href="https://www.icnz.org.nz" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-emerald-600 transition-colors">
-                      Insurance Council of NZ ↗
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.worksafe.govt.nz" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-emerald-600 transition-colors">
-                      WorkSafe New Zealand ↗
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.ifso.nz" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-emerald-600 transition-colors">
-                      Insurance &amp; Financial Services Ombudsman ↗
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.fma.govt.nz" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-emerald-600 transition-colors">
-                      Financial Markets Authority ↗
-                    </a>
-                  </li>
-                </ul>
+                {/* Compare Insurers */}
+                <Link
+                  href="/compare"
+                  className="group block bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200/60 rounded-2xl p-5 hover:shadow-lg hover:border-sky-300 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-sky-500 to-sky-600 flex items-center justify-center flex-shrink-0 shadow-md shadow-sky-500/20 group-hover:scale-110 transition-transform">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-sm group-hover:text-sky-700 transition-colors">Compare Insurers</h4>
+                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">Vero, NZI, AIG, Crombie Lockwood &amp; Delta side-by-side</p>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* FAQ */}
+                <Link
+                  href="/#faq"
+                  className="group block bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200/60 rounded-2xl p-5 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center flex-shrink-0 shadow-md shadow-amber-500/20 group-hover:scale-110 transition-transform">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-sm group-hover:text-amber-700 transition-colors">FAQ Section</h4>
+                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">Answers to common public liability questions</p>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* About Us */}
+                <Link
+                  href="/about"
+                  className="group block bg-gradient-to-br from-violet-50 to-purple-50 border border-violet-200/60 rounded-2xl p-5 hover:shadow-lg hover:border-violet-300 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-md shadow-violet-500/20 group-hover:scale-110 transition-transform">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-sm group-hover:text-violet-700 transition-colors">About Us</h4>
+                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">20+ years of insurance expertise across 4 markets</p>
+                    </div>
+                  </div>
+                </Link>
               </div>
+            </div>
+
+            {/* NZ Regulatory Bodies */}
+            <div className="bg-slate-800 rounded-2xl p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <h3 className="font-bold text-white text-sm">NZ Regulatory Bodies</h3>
+              </div>
+              <div className="space-y-2">
+                {[
+                  { name: 'Insurance Council of NZ', abbr: 'ICNZ', url: 'https://www.icnz.org.nz', colour: 'emerald' },
+                  { name: 'WorkSafe New Zealand', abbr: 'WorkSafe', url: 'https://www.worksafe.govt.nz', colour: 'sky' },
+                  { name: 'Financial Services Ombudsman', abbr: 'IFSO', url: 'https://www.ifso.nz', colour: 'amber' },
+                  { name: 'Financial Markets Authority', abbr: 'FMA', url: 'https://www.fma.govt.nz', colour: 'violet' },
+                ].map((body) => (
+                  <a
+                    key={body.abbr}
+                    href={body.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-200 group"
+                  >
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-2 py-1 rounded-md flex-shrink-0">
+                        {body.abbr}
+                      </span>
+                      <span className="text-sm text-slate-300 group-hover:text-white transition-colors truncate">
+                        {body.name}
+                      </span>
+                    </div>
+                    <svg className="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+              <p className="text-xs text-slate-500 mt-4 leading-relaxed">
+                Always verify your insurer is registered with the relevant NZ authorities.
+              </p>
             </div>
           </aside>
         </div>
