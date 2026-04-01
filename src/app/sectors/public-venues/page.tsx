@@ -67,9 +67,11 @@ export default function PublicVenuesPage() {
                 </Link>
               </div>
               <div className="relative">
-                <div className="w-full h-64 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-lg flex items-center justify-center text-white font-semibold">
-                  [Gemini: Large crowd at an outdoor concert or sports event, vibrant energy, safety visible, NZ venue setting]
-                </div>
+                <img
+                  src="/images/sector-venue.jpg"
+                  alt="Public venue and event liability insurance coverage"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>

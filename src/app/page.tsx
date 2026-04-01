@@ -101,9 +101,11 @@ export default function Home() {
               <div className="relative">
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/20">
                   <div className="text-center">
-                    <div className="w-full h-64 bg-gradient-to-br from-blue-400 to-emerald-400 rounded-lg flex items-center justify-center text-white font-semibold">
-                      [Gemini: Professional businesspeople in a modern office discussing insurance, shaking hands, warm lighting, NZ setting]
-                    </div>
+                    <img
+                      src="/images/hero-business.jpg"
+                      alt="Professional insurance protection for New Zealand businesses"
+                      className="w-full h-64 object-cover rounded-lg"
+                    />
                     <p className="text-sm text-blue-100 mt-4">Professional insurance advisory service</p>
                   </div>
                 </div>

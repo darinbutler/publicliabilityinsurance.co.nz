@@ -58,9 +58,11 @@ export default function BlogPage() {
                 className="bg-white rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg hover:border-blue-500 transition-all duration-300"
               >
                 {/* Image Placeholder */}
-                <div className="w-full h-48 bg-gradient-to-br from-blue-400 to-emerald-400 flex items-center justify-center">
-                  <span className="text-4xl">📰</span>
-                </div>
+                <img
+                  src="/images/blog-placeholder.jpg"
+                  alt={post.title}
+                  className="w-full h-48 object-cover"
+                />
 
                 <div className="p-6">
                   {/* Category Badge */}

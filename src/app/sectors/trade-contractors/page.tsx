@@ -67,9 +67,11 @@ export default function TradeContractorsPage() {
                 </Link>
               </div>
               <div className="relative">
-                <div className="w-full h-64 bg-gradient-to-br from-orange-400 to-amber-400 rounded-lg flex items-center justify-center text-white font-semibold">
-                  [Gemini: Construction workers on a modern building site, professional safety gear, NZ high-rise or residential building]
-                </div>
+                <img
+                  src="/images/sector-construction.jpg"
+                  alt="Trade and contractor public liability insurance coverage"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>

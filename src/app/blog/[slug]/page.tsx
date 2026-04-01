@@ -94,9 +94,11 @@ export default function BlogPostPage({ params }: Props) {
           {/* Main Article Content */}
           <article className="lg:col-span-2">
             {/* Featured Image Placeholder */}
-            <div className="w-full h-96 bg-gradient-to-br from-blue-400 to-emerald-400 rounded-lg flex items-center justify-center mb-8">
-              <span className="text-6xl">📰</span>
-            </div>
+            <img
+              src="/images/blog-placeholder.jpg"
+              alt={post.title}
+              className="w-full h-96 object-cover rounded-lg mb-8"
+            />
 
             {/* Article Content */}
             <div

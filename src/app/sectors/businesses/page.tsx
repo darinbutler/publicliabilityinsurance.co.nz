@@ -67,9 +67,11 @@ export default function BusinessesPage() {
                 </Link>
               </div>
               <div className="relative">
-                <div className="w-full h-64 bg-gradient-to-br from-pink-400 to-rose-400 rounded-lg flex items-center justify-center text-white font-semibold">
-                  [Gemini: Busy retail shop floor with customers and staff, professional atmosphere, modern NZ store]
-                </div>
+                <img
+                  src="/images/sector-retail.jpg"
+                  alt="Business and retail public liability insurance coverage"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>

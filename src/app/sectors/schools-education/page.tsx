@@ -67,9 +67,11 @@ export default function SchoolsEducationPage() {
                 </Link>
               </div>
               <div className="relative">
-                <div className="w-full h-64 bg-gradient-to-br from-purple-400 to-indigo-400 rounded-lg flex items-center justify-center text-white font-semibold">
-                  [Gemini: Diverse group of children and educator in a bright, safe classroom environment, NZ school setting, warm and nurturing]
-                </div>
+                <img
+                  src="/images/sector-school.jpg"
+                  alt="Schools and education public liability insurance coverage"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>
