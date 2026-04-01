@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Cover4You',
-  description: 'Cover4You privacy policy explaining how we collect, use, and protect your personal information.',
+  title: 'Privacy Policy | Public Liability Insurance',
+  description: 'Public Liability Insurance privacy policy explaining how we collect, use, and protect your personal information.',
   robots: 'noindex, follow',
 };
 
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-xl text-blue-100">
-            How Cover4You protects your personal information
+            How Public Liability Insurance protects your personal information
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
 
           <h2>1. Introduction</h2>
           <p>
-            Cover4You Limited ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, contact us, or use our services.
+            Public Liability Insurance Limited ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, contact us, or use our services.
           </p>
           <p>
             Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our services.
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
 
           <h3>4.4 Business Transfers</h3>
           <p>
-            If Cover4You is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will provide notice before your information becomes subject to a different privacy policy.
+            If Public Liability Insurance is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will provide notice before your information becomes subject to a different privacy policy.
           </p>
 
           <h2>5. Data Retention</h2>
@@ -144,7 +144,7 @@ export default function PrivacyPage() {
 
           <h2>10. Children's Privacy</h2>
           <p>
-            Cover4You does not knowingly collect personal information from children under 13 years of age. If we become aware that we have collected information from a child under 13, we will delete such information and terminate the child's account.
+            Public Liability Insurance does not knowingly collect personal information from children under 13 years of age. If we become aware that we have collected information from a child under 13, we will delete such information and terminate the child's account.
           </p>
 
           <h2>11. International Data Transfers</h2>
@@ -164,7 +164,7 @@ export default function PrivacyPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
             <p>
-              <strong>Cover4You Limited</strong><br />
+              <strong>Public Liability Insurance Limited</strong><br />
               Auckland, New Zealand<br />
               Email: <a href="mailto:privacy@cover4you.co.nz" className="text-blue-600 hover:text-blue-700">privacy@cover4you.co.nz</a><br />
               Phone: <a href="tel:098859549" className="text-blue-600 hover:text-blue-700">09 885 9549</a>

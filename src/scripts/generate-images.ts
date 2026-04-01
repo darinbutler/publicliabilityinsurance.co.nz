@@ -105,7 +105,7 @@ function cleanupOldImages(): void {
  */
 async function main(): Promise<void> {
   console.log('====================================');
-  console.log('Cover4You Image Generation Script');
+  console.log('Public Liability Insurance Image Generation Script');
   console.log('====================================\n');
 
   // Cleanup old images

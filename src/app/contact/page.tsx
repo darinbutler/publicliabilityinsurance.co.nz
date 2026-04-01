@@ -3,10 +3,10 @@ import QuoteForm from '@/components/QuoteForm';
 import { faqs } from '@/data/faqs';
 
 export const metadata: Metadata = {
-  title: 'Contact Cover4You | Get Public Liability Insurance Quote | NZ',
-  description: 'Get a free public liability insurance quote from Cover4You. Contact us or use our quote form to get personalized coverage options from NZ insurers.',
+  title: 'Contact Public Liability Insurance | Get Public Liability Insurance Quote | NZ',
+  description: 'Get a free public liability insurance quote from Public Liability Insurance. Contact us or use our quote form to get personalized coverage options from NZ insurers.',
   openGraph: {
-    title: 'Contact Cover4You',
+    title: 'Contact Public Liability Insurance',
     description: 'Get your free public liability insurance quote today.',
     type: 'website',
   },

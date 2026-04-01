@@ -3,7 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import CTABanner from '@/components/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'Public Liability Coverage Guide | Coverage Levels Explained | Cover4You',
+  title: 'Public Liability Coverage Guide | Coverage Levels Explained | Public Liability Insurance',
   description: 'Complete guide to public liability insurance coverage levels ($1M-$20M) for NZ businesses. Understand what\'s covered, how premiums are calculated, and choose the right level for your business.',
   openGraph: {
     title: 'Public Liability Coverage Levels Guide',

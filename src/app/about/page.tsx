@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import CTABanner from '@/components/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'About Cover4You | NZ Public Liability Insurance | Why Choose Us',
-  description: 'Learn about Cover4You, an independent NZ insurance comparison service. We help businesses find the right public liability coverage from trusted local brokers.',
+  title: 'About Public Liability Insurance | NZ Public Liability Insurance | Why Choose Us',
+  description: 'Learn about Public Liability Insurance, an independent NZ insurance comparison service. We help businesses find the right public liability coverage from trusted local brokers.',
   openGraph: {
-    title: 'About Cover4You',
+    title: 'About Public Liability Insurance',
     description: 'Independent NZ public liability insurance comparison service.',
     type: 'website',
   },
@@ -91,7 +91,7 @@ export default function AboutPage() {
       <section className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            About Cover4You
+            About Public Liability Insurance
           </h1>
           <p className="text-xl text-blue-100">
             Independent NZ insurance comparison service helping businesses find the right public liability coverage.
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
           <div className="prose prose-sm max-w-none text-slate-700 mb-8">
             <p className="text-lg leading-relaxed">
-              At Cover4You, we believe that every NZ business deserves access to quality public liability insurance without the hassle, confusion, or excessive costs that often come with traditional insurance shopping.
+              At Public Liability Insurance, we believe that every NZ business deserves access to quality public liability insurance without the hassle, confusion, or excessive costs that often come with traditional insurance shopping.
             </p>
             <p className="text-lg leading-relaxed">
               Our mission is to simplify the insurance process by connecting businesses with the right coverage from trusted providers, making protection affordable and straightforward.
@@ -131,7 +131,7 @@ export default function AboutPage() {
 
         {/* Why Choose Us */}
         <section className="max-w-6xl mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12">Why Choose Cover4You</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-12">Why Choose Public Liability Insurance</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {whyChooseUs.map((item, idx) => (
               <div key={idx} className="flex gap-4">
@@ -215,7 +215,7 @@ export default function AboutPage() {
         {/* How It Works */}
         <section className="w-full bg-slate-50 py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-12">How Cover4You Works</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-12">How Public Liability Insurance Works</h2>
 
             <div className="space-y-6">
               <div className="flex gap-6 items-start">
@@ -284,11 +284,11 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                quote: "I spent hours getting quotes from individual insurers. Cover4You gave me everything in one place. Saved me time and got me a better rate!",
+                quote: "I spent hours getting quotes from individual insurers. Public Liability Insurance gave me everything in one place. Saved me time and got me a better rate!",
                 author: 'Lisa, Café Owner',
               },
               {
-                quote: "As a contractor, finding $5M cover at a reasonable price was difficult. Cover4You made the comparison easy and found me exactly what I needed.",
+                quote: "As a contractor, finding $5M cover at a reasonable price was difficult. Public Liability Insurance made the comparison easy and found me exactly what I needed.",
                 author: 'Mike, Building Contractor',
               },
               {
@@ -296,7 +296,7 @@ export default function AboutPage() {
                 author: 'Amanda, Retail Manager',
               },
               {
-                quote: "Finally, someone who understands the NZ insurance market. Can't recommend Cover4You highly enough.",
+                quote: "Finally, someone who understands the NZ insurance market. Can't recommend Public Liability Insurance highly enough.",
                 author: 'David, Business Owner',
               },
             ].map((testimonial, idx) => (

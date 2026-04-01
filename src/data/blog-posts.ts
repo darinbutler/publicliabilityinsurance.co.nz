@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A comprehensive guide to what public liability insurance covers, why it matters, and how it protects your business from unexpected claims.',
     date: '2026-03-15',
     category: 'Guides',
-    author: 'Cover4You Team',
+    author: 'Public Liability Insurance Team',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>What is Public Liability Insurance?</h2>
@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Determining the right coverage amount for your business is crucial. Learn how to assess your risk profile and choose appropriate coverage limits.',
     date: '2026-03-08',
     category: 'Guides',
-    author: 'Cover4You Team',
+    author: 'Public Liability Insurance Team',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>Assessing Your Coverage Needs</h2>
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Confused about the difference between public liability and professional indemnity insurance? This guide breaks down what each covers and when you need both.',
     date: '2026-02-28',
     category: 'Guides',
-    author: 'Cover4You Team',
+    author: 'Public Liability Insurance Team',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>Understanding the Key Differences</h2>
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Real-world examples of the most common public liability claims in New Zealand and what they cost. Learn from others\' experiences to better protect your business.',
     date: '2026-02-20',
     category: 'Industry Insights',
-    author: 'Cover4You Team',
+    author: 'Public Liability Insurance Team',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>Real Claims, Real Costs</h2>
@@ -237,7 +237,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Exploring why trade contractors and builders increasingly require $5M public liability cover as an industry standard and what this means for your business.',
     date: '2026-02-10',
     category: 'Industry Insights',
-    author: 'Cover4You Team',
+    author: 'Public Liability Insurance Team',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>The Shift to Higher Coverage</h2>
@@ -307,7 +307,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding your legal duty of care obligations as an education provider and why comprehensive public liability insurance is non-negotiable.',
     date: '2026-02-01',
     category: 'Industry Insights',
-    author: 'Cover4You Team',
+    author: 'Public Liability Insurance Team',
     content: `
       <div class="prose prose-sm max-w-none">
         <h2>The Duty of Care in Education</h2>

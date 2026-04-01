@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Quote Submitted | Thank You | Cover4You',
+  title: 'Quote Submitted | Thank You | Public Liability Insurance',
   description: 'Thank you for submitting your public liability insurance quote request. We\'ll be in touch soon with personalized options.',
   robots: 'noindex, follow', // Don't index thank you page
 };

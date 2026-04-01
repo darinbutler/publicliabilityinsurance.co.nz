@@ -4,7 +4,7 @@ import CTABanner from '@/components/CTABanner';
 import { insurers, coverageFeatures, industryPremiums } from '@/data/insurers';
 
 export const metadata: Metadata = {
-  title: 'Compare NZ Insurance Providers | Public Liability Insurance | Cover4You',
+  title: 'Compare NZ Insurance Providers | Public Liability Insurance | Public Liability Insurance',
   description: 'Compare public liability insurance providers in New Zealand. See coverage features, premium ranges by industry, and choose the best insurer for your business.',
   openGraph: {
     title: 'Compare NZ Insurance Providers',

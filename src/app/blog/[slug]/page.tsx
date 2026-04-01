@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${post.title} | Cover4You Blog`,
+    title: `${post.title} | Public Liability Insurance Blog`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -112,7 +112,7 @@ export default function BlogPostPage({ params }: Props) {
               <div className="bg-slate-50 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">About the Author</h3>
                 <p className="text-slate-700">
-                  {post.author} is part of the Cover4You team, committed to making public liability insurance transparent and accessible for all NZ businesses.
+                  {post.author} is part of the Public Liability Insurance team, committed to making public liability insurance transparent and accessible for all NZ businesses.
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function BlogPostPage({ params }: Props) {
                 </li>
                 <li>
                   <Link href="/about" className="text-blue-600 hover:text-blue-700 font-semibold">
-                    → About Cover4You
+                    → About Public Liability Insurance
                   </Link>
                 </li>
                 <li>
@@ -233,7 +233,7 @@ export default function BlogPostPage({ params }: Props) {
               },
               publisher: {
                 '@type': 'Organization',
-                name: 'Cover4You',
+                name: 'Public Liability Insurance',
                 logo: {
                   '@type': 'ImageObject',
                   url: '/logo.png',

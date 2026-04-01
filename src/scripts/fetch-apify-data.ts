@@ -75,7 +75,7 @@ async function fetchAllData(): Promise<void> {
  */
 async function main(): Promise<void> {
   console.log('====================================');
-  console.log('Cover4You Apify Data Fetch Script');
+  console.log('Public Liability Insurance Apify Data Fetch Script');
   console.log('====================================\n');
 
   ensureDirectory();

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { blogPosts } from '@/data/blog-posts';
 
 export const metadata: Metadata = {
-  title: 'Public Liability Insurance Blog | NZ Insurance Articles | Cover4You',
+  title: 'Public Liability Insurance Blog | NZ Insurance Articles | Public Liability Insurance',
   description: 'Expert articles and guides on public liability insurance in New Zealand. Learn about coverage, claims, industry-specific requirements, and more.',
   openGraph: {
     title: 'Public Liability Insurance Blog',

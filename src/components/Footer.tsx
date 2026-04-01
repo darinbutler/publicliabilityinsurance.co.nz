@@ -18,7 +18,7 @@ export default function Footer() {
               Simplifying public liability insurance comparison for NZ businesses and professionals.
             </p>
             <p className="text-xs text-slate-500">
-              Powered by <span className="text-emerald-400 font-medium">Cover4You</span>
+              Powered by <span className="text-emerald-400 font-medium">PublicLiabilityInsurance.co.nz</span>
             </p>
           </div>
 
@@ -179,7 +179,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-            <p>&copy; {currentYear} Cover4You Ltd. All rights reserved.</p>
+            <p>&copy; {currentYear} Public Liability Insurance Ltd. All rights reserved.</p>
             <div className="flex gap-6">
               <Link href="/privacy" className="hover:text-emerald-400 transition-colors">
                 Privacy Policy
