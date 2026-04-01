@@ -75,7 +75,7 @@ export default function Header() {
                   Trade Contractors
                 </Link>
                 <Link
-                  href="/sectors/education"
+                  href="/sectors/schools-education"
                   className="block px-4 py-2 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600"
                 >
                   Schools & Education
@@ -197,7 +197,7 @@ export default function Header() {
                   Trade Contractors
                 </Link>
                 <Link
-                  href="/sectors/education"
+                  href="/sectors/schools-education"
                   className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
                 >
                   Schools & Education

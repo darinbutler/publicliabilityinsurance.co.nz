@@ -81,7 +81,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/sectors/education"
+                  href="/sectors/schools-education"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
                 >
                   Schools & Education
