@@ -13,11 +13,23 @@ export default function QuoteForm() {
 
   return (
     <div className="w-full max-w-xl mx-auto">
+      <div className="bg-white border-2 border-slate-200 rounded-2xl shadow-xl p-8 md:p-10">
+        <div className="flex items-center gap-3 mb-6 pb-6 border-b border-slate-100">
+          <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div>
+            <p className="font-bold text-slate-900">Free, No-Obligation Quote</p>
+            <p className="text-sm text-slate-500">Takes less than 2 minutes</p>
+          </div>
+        </div>
       <form
         action="https://formsubmit.co/hello@cover4you.co.nz"
         method="POST"
         onSubmit={handleSubmit}
-        className="space-y-6"
+        className="space-y-5"
       >
         {/* Full Name */}
         <div>
@@ -128,7 +140,7 @@ export default function QuoteForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full px-6 py-3 bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-400 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
+          className="w-full px-6 py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-400 text-white font-bold text-lg rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20"
         >
           {isLoading ? (
             <>
@@ -151,14 +163,18 @@ export default function QuoteForm() {
               Sending...
             </>
           ) : (
-            'Get My Free Quote'
+            'Get My Free Quote →'
           )}
         </button>
 
-        <p className="text-xs text-slate-500 text-center">
-          We respect your privacy. Your information is secure and will only be used to provide you with insurance quotes.
-        </p>
+        <div className="flex items-center justify-center gap-2 text-xs text-slate-400 pt-2">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          <p>Your information is secure and will only be used to provide you with insurance quotes.</p>
+        </div>
       </form>
+      </div>
     </div>
   );
 }
