@@ -114,11 +114,12 @@ export default function Footer() {
               <div>
                 <p className="text-slate-500 mb-1">Phone</p>
                 <a
-                  href="tel:0800000000"
+                  href="tel:098859549"
                   className="text-slate-400 hover:text-emerald-400 transition-colors"
                 >
-                  0800 000 000
+                  09 885 9549
                 </a>
+                <p className="text-xs text-slate-500 mt-1 italic">Quote PLI for best prices</p>
               </div>
               <div className="pt-4">
                 <p className="text-slate-500 mb-2 text-xs">Follow Us</p>

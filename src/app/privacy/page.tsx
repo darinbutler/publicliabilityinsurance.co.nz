@@ -167,7 +167,7 @@ export default function PrivacyPage() {
               <strong>Cover4You Limited</strong><br />
               Auckland, New Zealand<br />
               Email: <a href="mailto:privacy@cover4you.co.nz" className="text-blue-600 hover:text-blue-700">privacy@cover4you.co.nz</a><br />
-              Phone: <a href="tel:+64800COVER4U" className="text-blue-600 hover:text-blue-700">0800 COVER4U</a>
+              Phone: <a href="tel:098859549" className="text-blue-600 hover:text-blue-700">09 885 9549</a>
             </p>
           </div>
 

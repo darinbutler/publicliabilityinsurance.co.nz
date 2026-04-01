@@ -108,12 +108,13 @@ export default function ContactPage() {
             <div className="bg-white border border-slate-200 rounded-lg p-6">
               <h3 className="text-xl font-bold text-slate-900 mb-4">Phone</h3>
               <a
-                href="tel:+64800COVER4U"
+                href="tel:098859549"
                 className="text-blue-600 hover:text-blue-700 font-semibold text-lg"
               >
-                0800 COVER4U
+                09 885 9549
               </a>
-              <p className="text-slate-600 mt-4 text-sm">Available during business hours</p>
+              <p className="text-xs text-slate-500 mt-2 italic">Quote PLI for best prices</p>
+              <p className="text-slate-600 mt-3 text-sm">Available during business hours</p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-lg p-6">

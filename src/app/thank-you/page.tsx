@@ -110,7 +110,7 @@ export default function ThankYouPage() {
               </li>
               <li className="flex gap-2">
                 <span className="text-blue-600 font-bold">2</span>
-                <span>Call us: <a href="tel:+64800COVER4U" className="text-blue-600 hover:text-blue-700 font-semibold">0800 COVER4U</a></span>
+                <span>Call us: <a href="tel:098859549" className="text-blue-600 hover:text-blue-700 font-semibold">09 885 9549</a> <span className="text-xs text-slate-500 italic">(quote PLI for best prices)</span></span>
               </li>
               <li className="flex gap-2">
                 <span className="text-blue-600 font-bold">3</span>
@@ -235,10 +235,10 @@ export default function ThankYouPage() {
               <p className="text-blue-100">Need immediate assistance?</p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="tel:+64800COVER4U"
+                  href="tel:098859549"
                   className="inline-block px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition"
                 >
-                  Call Us: 0800 COVER4U
+                  Call Us: 09 885 9549
                 </a>
                 <a
                   href="mailto:hello@cover4you.co.nz"
