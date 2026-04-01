@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import CTABanner from '@/components/CTABanner';
+import HowItWorks from '@/components/HowItWorks';
+import AnimatedStats from '@/components/AnimatedStats';
 
 export const metadata: Metadata = {
   title: 'Public Liability Insurance NZ | Compare & Save | PublicLiability.co.nz',
@@ -86,75 +88,13 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 text-white">
-                <div>
-                  <div className="text-3xl font-bold">500+</div>
-                  <p className="text-sm text-slate-300">Businesses Protected</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold">15+</div>
-                  <p className="text-sm text-slate-300">Top Insurers</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold">$0</div>
-                  <p className="text-sm text-slate-300">Broker Fees</p>
-                </div>
-              </div>
+              <AnimatedStats />
             </div>
           </div>
         </section>
 
         {/* How It Works */}
-        <section className="w-full py-20 px-4 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">How It Works</h2>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-                Getting the right public liability insurance for your NZ business is simpler than you think.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              {[
-                {
-                  step: '1',
-                  title: 'Tell Us About Your Business',
-                  description:
-                    'Share your business type, location, turnover, and coverage needs. Takes just 5 minutes.',
-                  icon: '📝',
-                },
-                {
-                  step: '2',
-                  title: 'Compare Tailored Quotes',
-                  description:
-                    'We instantly match you with 15+ insurers. Review coverage options and pricing side-by-side.',
-                  icon: '📊',
-                },
-                {
-                  step: '3',
-                  title: 'Get Covered Today',
-                  description:
-                    'Choose your policy, bind coverage immediately, and receive your certificate online within hours.',
-                  icon: '✅',
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="relative">
-                  <div className="text-center p-8 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors h-full">
-                    <div className="text-5xl mb-4">{item.icon}</div>
-                    <div className="text-2xl font-bold text-blue-600 mb-3">Step {item.step}</div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h3>
-                    <p className="text-slate-600 leading-relaxed">{item.description}</p>
-                  </div>
-                  {idx < 2 && (
-                    <div className="hidden md:block absolute top-1/2 -right-6 transform -translate-y-1/2 text-3xl text-slate-300">
-                      →
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <HowItWorks />
 
         {/* Industry Sectors */}
         <section id="sectors" className="w-full py-20 px-4 bg-slate-50">
