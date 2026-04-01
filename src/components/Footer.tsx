@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,11 +11,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Column */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">✓</span>
-              </div>
-              <span className="font-bold text-white">PublicLiabilityInsurance</span>
+            <div className="mb-4">
+              <Logo variant="white" />
             </div>
             <p className="text-sm text-slate-400 mb-4">
               Simplifying public liability insurance comparison for NZ businesses and professionals.

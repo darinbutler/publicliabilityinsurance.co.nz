@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,15 +27,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">✓</span>
-            </div>
-            <span className="hidden sm:inline text-slate-900">
-              PublicLiability<span className="text-emerald-600">Insurance</span>.co.nz
-            </span>
-            <span className="sm:hidden text-slate-900">PLI</span>
-          </Link>
+          <span className="hidden sm:block">
+            <Logo />
+          </span>
+          <span className="sm:hidden">
+            <Logo variant="compact" />
+          </span>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
