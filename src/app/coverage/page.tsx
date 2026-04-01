@@ -290,7 +290,7 @@ export default function CoveragePage() {
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Get Covered?</h2>
             <p className="text-lg text-slate-600">
-              Get personalized quotes from multiple NZ insurers in minutes. Find the right coverage at the best price.
+              Get personalised quotes from multiple NZ insurers in minutes. Find the right coverage at the best price.
             </p>
           </div>
           <QuoteForm />

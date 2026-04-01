@@ -9,7 +9,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   heading = 'Ready to Protect Your Business?',
-  subtext = 'Get personalized public liability insurance quotes from NZ\'s top providers.',
+  subtext = 'Get personalised public liability insurance quotes from NZ\'s top providers.',
   buttonText = 'Get a Free Quote',
   buttonLink = '/contact',
 }: CTABannerProps) {

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Quote Submitted | Thank You | Public Liability Insurance',
-  description: 'Thank you for submitting your public liability insurance quote request. We\'ll be in touch soon with personalized options.',
+  description: 'Thank you for submitting your public liability insurance quote request. We\'ll be in touch soon with personalised options.',
   robots: 'noindex, follow', // Don't index thank you page
 };
 
@@ -59,7 +59,7 @@ export default function ThankYouPage() {
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">Notification</h3>
                   <p className="text-slate-700">
-                    We'll send you an email with your personalized quote comparison, including coverage options and pricing.
+                    We'll send you an email with your personalised quote comparison, including coverage options and pricing.
                   </p>
                   <p className="text-sm text-slate-600 mt-2">Check your inbox and spam folder</p>
                 </div>

@@ -281,7 +281,7 @@ export default function BusinessesPage() {
                 Get Your Retail Business Quote
               </h2>
               <p className="text-xl text-slate-600">
-                Answer a few quick questions to see personalized quotes from top NZ insurers.
+                Answer a few quick questions to see personalised quotes from top NZ insurers.
               </p>
             </div>
             <QuoteForm />

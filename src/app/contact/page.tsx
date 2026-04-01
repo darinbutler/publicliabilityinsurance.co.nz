@@ -4,7 +4,7 @@ import { faqs } from '@/data/faqs';
 
 export const metadata: Metadata = {
   title: 'Contact Public Liability Insurance | Get Public Liability Insurance Quote | NZ',
-  description: 'Get a free public liability insurance quote from Public Liability Insurance. Contact us or use our quote form to get personalized coverage options from NZ insurers.',
+  description: 'Get a free public liability insurance quote from Public Liability Insurance. Contact us or use our quote form to get personalised coverage options from NZ insurers.',
   openGraph: {
     title: 'Contact Public Liability Insurance',
     description: 'Get your free public liability insurance quote today.',
@@ -276,7 +276,7 @@ export default function ContactPage() {
           <div className="bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-4">Ready to Get Covered Today?</h2>
             <p className="mb-6 text-blue-100">
-              Don't wait. Scroll back up, fill out the quick form, and get your personalized quotes within minutes.
+              Don't wait. Scroll back up, fill out the quick form, and get your personalised quotes within minutes.
             </p>
             <a
               href="#quote-form"

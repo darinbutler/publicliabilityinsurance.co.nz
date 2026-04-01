@@ -30,7 +30,7 @@ export default function AboutPage() {
     },
     {
       title: 'Connected',
-      description: 'We work with a network of trusted local brokers who can provide personalized support and advice.',
+      description: 'We work with a network of trusted local brokers who can provide personalised support and advice.',
       icon: '🤝',
     },
   ];
@@ -168,7 +168,7 @@ export default function AboutPage() {
               <div className="bg-white rounded-lg p-6 border border-slate-200">
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Broker Network</h3>
                 <p className="text-slate-700 mb-4">
-                  Connected with experienced insurance brokers throughout New Zealand who provide local expertise and personalized support.
+                  Connected with experienced insurance brokers throughout New Zealand who provide local expertise and personalised support.
                 </p>
                 <p className="text-sm text-slate-600">
                   <strong>Why it matters:</strong> Local brokers understand your specific needs and can advocate for you when it counts.

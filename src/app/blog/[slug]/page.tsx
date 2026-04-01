@@ -210,7 +210,7 @@ export default function BlogPostPage({ params }: Props) {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Get Covered?</h2>
             <p className="text-lg text-slate-600 mb-8">
-              Now that you understand your insurance needs, get personalized quotes from multiple NZ insurers.
+              Now that you understand your insurance needs, get personalised quotes from multiple NZ insurers.
             </p>
             <QuoteForm />
           </div>

@@ -68,7 +68,7 @@ export default function Home() {
                 Protect Your Business with the Right Public Liability Cover
               </h1>
               <p className="text-xl text-slate-200 mb-8 leading-relaxed">
-                Compare personalized public liability insurance quotes from New Zealand&apos;s leading insurers in minutes. No hidden fees. No broker commissions. Just transparent pricing.
+                Compare personalised public liability insurance quotes from New Zealand&apos;s leading insurers in minutes. No hidden fees. No broker commissions. Just transparent pricing.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -247,7 +247,7 @@ export default function Home() {
                 {
                   title: 'Client Requirements',
                   description:
-                    'Many clients, especially large organizations and councils, require proof of public liability insurance before working with you. It\'s often a contract requirement.',
+                    'Many clients, especially large organisations and councils, require proof of public liability insurance before working with you. It\'s often a contract requirement.',
                 },
                 {
                   title: 'Peace of Mind',
@@ -358,7 +358,7 @@ export default function Home() {
                 },
                 {
                   q: 'How long does it take to get a quote?',
-                  a: 'Quotes are instant through our online form. You\'ll see available options within seconds. If you prefer to speak with someone, our team can provide personalized advice within 2 business hours.',
+                  a: 'Quotes are instant through our online form. You\'ll see available options within seconds. If you prefer to speak with someone, our team can provide personalised advice within 2 business hours.',
                 },
                 {
                   q: 'Do you charge broker fees?',
@@ -393,7 +393,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-slate-900 mb-4">Get Your Free Quote</h2>
               <p className="text-xl text-slate-600">
-                Answer a few quick questions and compare personalized quotes from NZ's top insurers.
+                Answer a few quick questions and compare personalised quotes from NZ's top insurers.
               </p>
             </div>
             <QuoteForm />

@@ -61,7 +61,7 @@ export default function PrivacyPage() {
 
           <h3>2.3 Information From Third Parties</h3>
           <p>
-            We may receive information about you from our insurance partners and brokers to process your quote requests and provide you with personalized recommendations.
+            We may receive information about you from our insurance partners and brokers to process your quote requests and provide you with personalised recommendations.
           </p>
 
           <h2>3. How We Use Your Information</h2>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
           <h2>4. Who We Share Your Information With</h2>
           <h3>4.1 Insurance Partners</h3>
           <p>
-            We share your information with ICNZ-registered insurance companies and brokers to provide you with quote comparisons. These partners use your information solely to prepare personalized quotes and provide their services.
+            We share your information with ICNZ-registered insurance companies and brokers to provide you with quote comparisons. These partners use your information solely to prepare personalised quotes and provide their services.
           </p>
 
           <h3>4.2 Service Providers</h3>
@@ -134,7 +134,7 @@ export default function PrivacyPage() {
           <ul>
             <li><strong>Essential Cookies:</strong> Required for website functionality</li>
             <li><strong>Analytics Cookies:</strong> To understand how you use our website</li>
-            <li><strong>Marketing Cookies:</strong> To provide personalized advertising (with consent)</li>
+            <li><strong>Marketing Cookies:</strong> To provide personalised advertising (with consent)</li>
           </ul>
 
           <h2>9. Third-Party Links</h2>
