@@ -172,41 +172,50 @@ export default function Home() {
                   name: 'Businesses & Retail',
                   description: 'Retail shops, cafes, restaurants, salons, and other customer-facing businesses.',
                   href: '/sectors/businesses',
-                  gradient: 'from-pink-500 to-rose-500',
+                  image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&h=500&fit=crop&q=80',
                   icon: '🏪',
                 },
                 {
                   name: 'Trade Contractors',
                   description: 'Builders, plumbers, electricians, painters, landscapers, and construction firms.',
                   href: '/sectors/trade-contractors',
-                  gradient: 'from-orange-500 to-amber-500',
+                  image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop&q=80',
                   icon: '🔨',
                 },
                 {
                   name: 'Schools & Education',
                   description: 'ECE centres, primary and secondary schools, tertiary providers, and after-school programs.',
                   href: '/sectors/schools-education',
-                  gradient: 'from-purple-500 to-indigo-500',
+                  image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=500&fit=crop&q=80',
                   icon: '🎓',
                 },
                 {
                   name: 'Public Venues & Events',
                   description: 'Concert venues, sports grounds, community halls, markets, and adventure recreation.',
                   href: '/sectors/public-venues',
-                  gradient: 'from-cyan-500 to-blue-500',
+                  image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=500&fit=crop&q=80',
                   icon: '🎪',
                 },
               ].map((sector, idx) => (
                 <Link key={idx} href={sector.href}>
                   <div className="group cursor-pointer h-full">
-                    <div className={`bg-gradient-to-br ${sector.gradient} rounded-xl p-8 text-white mb-4 min-h-48 flex flex-col justify-between transform group-hover:scale-105 transition-transform duration-300`}>
-                      <div>
-                        <div className="text-5xl mb-4">{sector.icon}</div>
-                        <h3 className="text-2xl font-bold mb-3">{sector.name}</h3>
-                        <p className="text-lg opacity-90">{sector.description}</p>
-                      </div>
-                      <div className="font-semibold group-hover:translate-x-2 transition-transform">
-                        Learn More →
+                    <div className="relative rounded-xl overflow-hidden min-h-64 flex flex-col justify-between transform group-hover:scale-[1.03] transition-transform duration-300">
+                      <img
+                        src={sector.image}
+                        alt={sector.name}
+                        className="absolute inset-0 w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/85 group-hover:via-black/50 transition-colors duration-300"></div>
+                      <div className="relative z-10 p-8 flex flex-col justify-between h-full">
+                        <div>
+                          <div className="text-5xl mb-4">{sector.icon}</div>
+                          <h3 className="text-2xl font-bold text-white mb-3">{sector.name}</h3>
+                          <p className="text-lg text-slate-200">{sector.description}</p>
+                        </div>
+                        <div className="font-semibold text-white mt-4 group-hover:translate-x-2 transition-transform">
+                          Learn More →
+                        </div>
                       </div>
                     </div>
                   </div>
