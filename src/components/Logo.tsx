@@ -62,9 +62,8 @@ export default function Logo({ variant = 'default', className = '' }: LogoProps)
           <span className={`text-[15px] font-bold tracking-tight ${isWhite ? 'text-white' : 'text-slate-900'}`}>
             Public Liability
           </span>
-          <span className={`text-[13px] font-semibold tracking-wide ${isWhite ? 'text-emerald-300' : 'text-emerald-600'}`}>
-            INSURANCE
-            <span className={`ml-1 font-normal ${isWhite ? 'text-slate-300' : 'text-slate-500'}`}>.co.nz</span>
+          <span className={`text-[15px] font-bold tracking-tight ${isWhite ? 'text-emerald-300' : 'text-emerald-600'}`}>
+            Insurance
           </span>
         </div>
       )}
