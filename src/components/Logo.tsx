@@ -10,12 +10,12 @@ export default function Logo({ variant = 'default', className = '' }: LogoProps)
   const isCompact = variant === 'compact';
 
   return (
-    <Link href="/" className={`flex items-center gap-2.5 group ${className}`}>
+    <Link href="/" className={`flex items-center gap-3 group ${className}`}>
       {/* Shield Icon */}
       <div className="relative flex-shrink-0">
         <svg
-          width={isCompact ? 32 : 38}
-          height={isCompact ? 36 : 44}
+          width={isCompact ? 36 : 44}
+          height={isCompact ? 42 : 50}
           viewBox="0 0 38 44"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -56,14 +56,14 @@ export default function Logo({ variant = 'default', className = '' }: LogoProps)
         </svg>
       </div>
 
-      {/* Text */}
+      {/* Text — centred, uppercase */}
       {!isCompact && (
-        <div className="flex flex-col leading-tight">
-          <span className={`text-[15px] font-bold tracking-tight ${isWhite ? 'text-white' : 'text-slate-900'}`}>
-            Public Liability
+        <div className="flex flex-col items-center leading-tight text-center">
+          <span className={`text-[17px] font-extrabold uppercase tracking-widest ${isWhite ? 'text-white' : 'text-slate-900'}`}>
+            PUBLIC LIABILITY
           </span>
-          <span className={`text-[15px] font-bold tracking-tight ${isWhite ? 'text-emerald-300' : 'text-emerald-600'}`}>
-            Insurance
+          <span className={`text-[17px] font-extrabold uppercase tracking-widest ${isWhite ? 'text-emerald-300' : 'text-emerald-600'}`}>
+            INSURANCE
           </span>
         </div>
       )}
