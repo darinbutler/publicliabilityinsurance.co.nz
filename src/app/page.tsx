@@ -50,65 +50,54 @@ export default function Home() {
       />
 
       <main className="w-full">
-        {/* Hero Section */}
-        <section className="relative w-full min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-emerald-600 px-4 py-20 flex items-center">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          </div>
+        {/* Hero Section — full-width background image */}
+        <section className="relative w-full min-h-[90vh] flex items-center">
+          {/* Background image */}
+          <img
+            src="https://images.unsplash.com/photo-1595125988905-8f407ecb399f?w=1920&h=1080&fit=crop&q=80"
+            alt="Auckland city skyline, New Zealand"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+          />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/70 to-slate-900/40"></div>
 
-          <div className="max-w-7xl mx-auto w-full relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                  Protect Your Business with the Right Public Liability Cover
-                </h1>
-                <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                  Compare personalized public liability insurance quotes from New Zealand's leading insurers in minutes. No hidden fees. No broker commissions. Just transparent pricing.
-                </p>
+          <div className="max-w-7xl mx-auto w-full relative z-10 px-4 py-24">
+            <div className="max-w-2xl">
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Protect Your Business with the Right Public Liability Cover
+              </h1>
+              <p className="text-xl text-slate-200 mb-8 leading-relaxed">
+                Compare personalized public liability insurance quotes from New Zealand&apos;s leading insurers in minutes. No hidden fees. No broker commissions. Just transparent pricing.
+              </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                  <Link
-                    href="#quote-form"
-                    className="px-8 py-4 bg-white text-blue-600 font-bold text-lg rounded-lg hover:bg-blue-50 transition-colors inline-flex items-center justify-center"
-                  >
-                    Get a Free Quote
-                  </Link>
-                  <Link
-                    href="#sectors"
-                    className="px-8 py-4 bg-blue-500 text-white font-bold text-lg rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center justify-center border-2 border-white"
-                  >
-                    Explore by Sector
-                  </Link>
-                </div>
-
-                <div className="grid grid-cols-3 gap-4 text-white">
-                  <div>
-                    <div className="text-3xl font-bold">500+</div>
-                    <p className="text-sm text-blue-100">Businesses Protected</p>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold">15+</div>
-                    <p className="text-sm text-blue-100">Top Insurers</p>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold">$0</div>
-                    <p className="text-sm text-blue-100">Broker Fees</p>
-                  </div>
-                </div>
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Link
+                  href="#quote-form"
+                  className="px-8 py-4 bg-emerald-500 text-white font-bold text-lg rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-lg"
+                >
+                  Get a Free Quote
+                </Link>
+                <Link
+                  href="#sectors"
+                  className="px-8 py-4 bg-white/10 text-white font-bold text-lg rounded-lg hover:bg-white/20 transition-colors inline-flex items-center justify-center border-2 border-white/30 backdrop-blur-sm"
+                >
+                  Explore by Sector
+                </Link>
               </div>
 
-              <div className="relative">
-                <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-                  <div className="text-center">
-                    <img
-                      src="https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=675&fit=crop&q=80"
-                      alt="Professional insurance protection for New Zealand businesses"
-                      className="w-full h-64 object-cover rounded-lg"
-                      loading="eager"
-                    />
-                    <p className="text-sm text-blue-100 mt-4">Professional insurance advisory service</p>
-                  </div>
+              <div className="grid grid-cols-3 gap-6 text-white">
+                <div>
+                  <div className="text-3xl font-bold">500+</div>
+                  <p className="text-sm text-slate-300">Businesses Protected</p>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">15+</div>
+                  <p className="text-sm text-slate-300">Top Insurers</p>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">$0</div>
+                  <p className="text-sm text-slate-300">Broker Fees</p>
                 </div>
               </div>
             </div>
