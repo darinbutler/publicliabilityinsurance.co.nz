@@ -68,9 +68,10 @@ export default function PublicVenuesPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/images/sector-venue.jpg"
+                  src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&h=675&fit=crop&q=80"
                   alt="Public venue and event liability insurance coverage"
                   className="w-full h-64 object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
             </div>

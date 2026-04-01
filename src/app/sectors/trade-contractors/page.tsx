@@ -68,9 +68,10 @@ export default function TradeContractorsPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/images/sector-construction.jpg"
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=675&fit=crop&q=80"
                   alt="Trade and contractor public liability insurance coverage"
                   className="w-full h-64 object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -68,9 +68,10 @@ export default function SchoolsEducationPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/images/sector-school.jpg"
+                  src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&h=675&fit=crop&q=80"
                   alt="Schools and education public liability insurance coverage"
                   className="w-full h-64 object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
             </div>

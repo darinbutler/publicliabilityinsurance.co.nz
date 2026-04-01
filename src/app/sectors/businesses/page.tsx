@@ -68,9 +68,10 @@ export default function BusinessesPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/images/sector-retail.jpg"
+                  src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1200&h=675&fit=crop&q=80"
                   alt="Business and retail public liability insurance coverage"
                   className="w-full h-64 object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -102,9 +102,10 @@ export default function Home() {
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/20">
                   <div className="text-center">
                     <img
-                      src="/images/hero-business.jpg"
+                      src="https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=675&fit=crop&q=80"
                       alt="Professional insurance protection for New Zealand businesses"
                       className="w-full h-64 object-cover rounded-lg"
+                      loading="eager"
                     />
                     <p className="text-sm text-blue-100 mt-4">Professional insurance advisory service</p>
                   </div>
