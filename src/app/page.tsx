@@ -237,21 +237,21 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  name: 'Sarah Mitchell',
+                  name: 'Sarah M.',
                   business: 'Café Owner, Auckland',
                   quote:
                     'I was worried about slip-and-fall claims from customers. PublicLiability.co.nz helped me find affordable coverage in minutes. The comparison was clear and honest.',
                   stars: 5,
                 },
                 {
-                  name: 'James Chen',
+                  name: 'James C.',
                   business: 'Builder, Christchurch',
                   quote:
                     'As a contractor, I need high limits for site work. The form understood my needs, and I got quotes from insurers who actually know construction risks. Saved me hours.',
                   stars: 5,
                 },
                 {
-                  name: 'Emma Thompson',
+                  name: 'Emma T.',
                   business: 'School Principal, Wellington',
                   quote:
                     'Our school needed updated coverage. The team understood duty of care in education. Great service, and no pressure to buy.',
