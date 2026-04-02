@@ -163,7 +163,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-28',
     category: 'Guides',
     author: 'Sarah Mitchell',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848e66ad76?w=800&h=450&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=450&fit=crop&q=80',
     readingTime: '6 min read',
     content: `
       <h2>Two Policies, Two Very Different Purposes</h2>
