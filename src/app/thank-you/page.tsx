@@ -44,7 +44,7 @@ export default function ThankYouPage() {
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">Processing</h3>
                   <p className="text-slate-700">
-                    We're comparing quotes from multiple ICNZ-registered insurers based on your business profile.
+                    We're comparing quotes from multiple licensed insurers based on your business profile.
                   </p>
                   <p className="text-sm text-slate-600 mt-2">Typical time: 30 minutes to 2 hours</p>
                 </div>
