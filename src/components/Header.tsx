@@ -27,12 +27,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <span className="hidden sm:block">
-            <Logo />
-          </span>
-          <span className="sm:hidden">
-            <Logo variant="compact" />
-          </span>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
@@ -156,6 +151,7 @@ export default function Header() {
           <div className="lg:hidden pb-4 border-t border-slate-200">
             <Link
               href="/"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
             >
               Home
@@ -186,24 +182,28 @@ export default function Header() {
               <div className="bg-slate-50">
                 <Link
                   href="/sectors/businesses"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
                 >
                   Businesses
                 </Link>
                 <Link
                   href="/sectors/trade-contractors"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
                 >
                   Trade Contractors
                 </Link>
                 <Link
                   href="/sectors/schools-education"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
                 >
                   Schools & Education
                 </Link>
                 <Link
                   href="/sectors/public-venues"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
                 >
                   Public Venues
@@ -213,30 +213,35 @@ export default function Header() {
 
             <Link
               href="/coverage"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
             >
               Coverage
             </Link>
             <Link
               href="/compare"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
             >
               Compare
             </Link>
             <Link
               href="/blog"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
             >
               Blog
             </Link>
             <Link
               href="/about"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
             >
               About
             </Link>
             <Link
               href="/contact"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
             >
               Contact
@@ -245,6 +250,7 @@ export default function Header() {
             <div className="px-4 py-3 border-t border-slate-200 mt-2">
               <Link
                 href="/contact"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-center px-4 py-2 bg-emerald-600 text-white rounded-lg font-medium text-sm hover:bg-emerald-700 transition-colors"
               >
                 Get a Free Quote

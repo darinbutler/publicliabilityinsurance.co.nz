@@ -59,10 +59,10 @@ export default function Logo({ variant = 'default', className = '' }: LogoProps)
       {/* Text — centred, uppercase */}
       {!isCompact && (
         <div className="flex flex-col items-center leading-tight text-center">
-          <span className={`text-[17px] font-extrabold uppercase tracking-widest ${isWhite ? 'text-white' : 'text-slate-900'}`}>
+          <span className={`text-[13px] sm:text-[17px] font-extrabold uppercase tracking-wider sm:tracking-widest ${isWhite ? 'text-white' : 'text-slate-900'}`}>
             PUBLIC LIABILITY
           </span>
-          <span className={`text-[17px] font-extrabold uppercase tracking-widest ${isWhite ? 'text-emerald-300' : 'text-emerald-600'}`}>
+          <span className={`text-[13px] sm:text-[17px] font-extrabold uppercase tracking-wider sm:tracking-widest ${isWhite ? 'text-emerald-300' : 'text-emerald-600'}`}>
             INSURANCE
           </span>
         </div>
