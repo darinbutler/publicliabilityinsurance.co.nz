@@ -1,0 +1,72 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/0wcn8yv1qhasf.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0msuz_siyytjs.js"],""]
+c:I[55307,["/_next/static/chunks/0wcn8yv1qhasf.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0msuz_siyytjs.js"],"default"]
+e:I[97367,["/_next/static/chunks/0wcn8yv1qhasf.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+3:Tcd6,
+      <div class="prose prose-sm max-w-none">
+        <h2>Understanding the Key Differences</h2>
+        <p>Many business owners confuse public liability insurance with professional indemnity insurance. While they both protect against liability claims, they cover very different types of incidents.</p>
+
+        <h3>Public Liability Insurance</h3>
+        <p><strong>Covers:</strong> Physical injury or property damage caused to members of the public during your business operations.</p>
+        <ul>
+          <li>A customer slips and falls in your shop</li>
+          <li>Your tradesman damages a client's fence while working</li>
+          <li>A product causes allergic reaction to a customer</li>
+          <li>Injury from equipment or premises defect</li>
+        </ul>
+
+        <h3>Professional Indemnity Insurance</h3>
+        <p><strong>Covers:</strong> Financial loss suffered by clients due to professional errors, omissions, or negligent advice.</p>
+        <ul>
+          <li>An accountant provides incorrect tax advice costing a client money</li>
+          <li>An architect's design flaw causes construction problems</li>
+          <li>A consultant's recommendation results in financial loss</li>
+          <li>A lawyer's negligence causes a client to lose a case</li>
+        </ul>
+
+        <h3>The Core Distinction</h3>
+        <table class="w-full border-collapse border border-slate-300">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="border border-slate-300 p-3 text-left">Aspect</th>
+              <th class="border border-slate-300 p-3 text-left">Public Liability</th>
+              <th class="border border-slate-300 p-3 text-left">Professional Indemnity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-300 p-3"><strong>Type of Harm</strong></td>
+              <td class="border border-slate-300 p-3">Physical injury / property damage</td>
+              <td class="border border-slate-300 p-3">Professional errors / bad advice</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-3"><strong>Applies To</strong></td>
+              <td class="border border-slate-300 p-3">All businesses</td>
+              <td class="border border-slate-300 p-3">Professional services only</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-3"><strong>Typical Claims</strong></td>
+              <td class="border border-slate-300 p-3">Accidents, injuries</td>
+              <td class="border border-slate-300 p-3">Negligence, breach of duty</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Who Needs Both?</h2>
+        <p>If you provide professional services (consulting, accounting, legal, design, engineering, etc.), you need BOTH policies. Public liability covers incidents involving the public, while professional indemnity covers errors in your professional work.</p>
+
+        <h2>Cost Considerations</h2>
+        <p>Professional indemnity insurance is typically more expensive than public liability because professional errors can result in significant financial claims. However, for professional service providers, it's an essential investment.</p>
+      </div>
+    0:{"rsc":["$","$1","c",{"children":[[["$","section",null,{"className":"relative min-h-[400px] flex items-end","style":{"backgroundImage":"url(https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80)","backgroundSize":"cover","backgroundPosition":"center"},"children":[["$","div",null,{"className":"absolute inset-0 bg-gradient-to-t from-gray-950/95 via-gray-900/60 to-transparent"}],["$","div",null,{"className":"relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-32 w-full","children":[["$","$L2",null,{"href":"/blog","className":"text-emerald-400 hover:text-white transition mb-4 inline-block text-sm font-semibold","children":"← Back to Blog"}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 mb-4","children":[["$","span",null,{"className":"px-3 py-1 bg-emerald-600 text-white rounded-full text-sm font-semibold","children":"Guides"}],["$","span",null,{"className":"text-slate-300 text-sm","children":"Cover4You Team"}],["$","span",null,{"className":"text-slate-400 text-sm","children":"28 February 2026"}]]}],["$","h1",null,{"className":"text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight","children":"Public Liability vs Professional Indemnity: Key Differences"}]]}]]}],["$","main",null,{"className":"w-full","children":[["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8","children":[["$","article",null,{"className":"lg:col-span-2","children":[["$","div",null,{"className":"prose prose-sm md:prose-base max-w-none text-slate-700 mb-8","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}],"$L7","$L8","$L9"]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"KDvxrSgywDaHJmrwpLeEI"}
+4:["$","div",null,{"className":"border-t border-slate-200 pt-8 mt-8","children":["$","div",null,{"className":"bg-slate-50 rounded-lg p-6","children":[["$","h3",null,{"className":"font-bold text-slate-900 mb-2","children":"About the Author"}],["$","p",null,{"className":"text-slate-700","children":["Cover4You Team"," is part of the Cover4You team, committed to making public liability insurance transparent and accessible for all NZ businesses."]}]]}]}]
+5:["$","div",null,{"className":"mt-8 py-8 border-t border-slate-200","children":[["$","h3",null,{"className":"font-bold text-slate-900 mb-4","children":"Share This Article"}],["$","div",null,{"className":"flex gap-3","children":[["$","button",null,{"className":"px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-sm font-semibold","children":"Facebook"}],["$","button",null,{"className":"px-4 py-2 bg-blue-400 text-white rounded hover:bg-blue-500 transition text-sm font-semibold","children":"Twitter"}],["$","button",null,{"className":"px-4 py-2 bg-slate-200 text-slate-900 rounded hover:bg-slate-300 transition text-sm font-semibold","children":"Copy Link"}]]}]]}]
+6:["$","aside",null,{"children":[["$","div",null,{"className":"bg-blue-50 border-2 border-blue-600 rounded-lg p-6 mb-8 sticky top-4","children":[["$","h3",null,{"className":"text-lg font-bold text-slate-900 mb-3","children":"Need Coverage?"}],["$","p",null,{"className":"text-sm text-slate-700 mb-4","children":"Get a free quote comparison from NZ insurers in just 5 minutes."}],["$","$L2",null,{"href":"/contact","className":"block w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition text-center text-sm","children":"Get Quote Now"}]]}],["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-lg font-bold text-slate-900 mb-4","children":"Related Articles"}],["$","div",null,{"className":"space-y-4","children":[["$","$L2","understanding-public-liability-nz",{"href":"/blog/understanding-public-liability-nz","className":"block p-4 bg-white border border-slate-200 rounded-lg hover:shadow-md hover:border-blue-500 transition","children":[["$","h4",null,{"className":"font-semibold text-slate-900 text-sm mb-2 line-clamp-2 hover:text-blue-600","children":"Understanding Public Liability Insurance in New Zealand"}],["$","p",null,{"className":"text-xs text-slate-500","children":"15 Mar"}]]}],["$","$L2","how-much-cover-does-your-business-need",{"href":"/blog/how-much-cover-does-your-business-need","className":"block p-4 bg-white border border-slate-200 rounded-lg hover:shadow-md hover:border-blue-500 transition","children":[["$","h4",null,{"className":"font-semibold text-slate-900 text-sm mb-2 line-clamp-2 hover:text-blue-600","children":"How Much Public Liability Cover Does Your Business Need?"}],["$","p",null,{"className":"text-xs text-slate-500","children":"8 Mar"}]]}]]}]]}],["$","div",null,{"className":"bg-slate-50 rounded-lg p-6","children":[["$","h3",null,{"className":"font-bold text-slate-900 mb-4","children":"Quick Links"}],["$","ul",null,{"className":"space-y-3 text-sm","children":[["$","li",null,{"children":["$","$L2",null,{"href":"/coverage","className":"text-blue-600 hover:text-blue-700 font-semibold","children":"→ Coverage Guide"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/compare","className":"text-blue-600 hover:text-blue-700 font-semibold","children":"→ Compare Insurers"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/about","className":"text-blue-600 hover:text-blue-700 font-semibold","children":"→ About Cover4You"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/contact","className":"text-blue-600 hover:text-blue-700 font-semibold","children":"→ Contact Us"}]}]]}]]}]]}]
+7:["$","section",null,{"className":"w-full bg-slate-50 py-16 px-4","children":["$","div",null,{"className":"max-w-4xl mx-auto","children":[["$","h2",null,{"className":"text-3xl font-bold text-slate-900 mb-4","children":"Ready to Get Covered?"}],["$","p",null,{"className":"text-lg text-slate-600 mb-8","children":"Now that you understand your insurance needs, get personalised quotes from multiple NZ insurers."}],["$","$Lc",null,{}]]}]}]
+d:T41a,{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://publicliabilityinsurance.co.nz/blog/public-liability-vs-professional-indemnity/"},"headline":"Public Liability vs Professional Indemnity: Key Differences","description":"Confused about the difference between public liability and professional indemnity insurance? This guide breaks down what each covers and when you need both.","image":"https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80","datePublished":"2026-02-28","dateModified":"2026-02-28","url":"https://publicliabilityinsurance.co.nz/blog/public-liability-vs-professional-indemnity/","author":{"@type":"Organization","name":"Cover4You","url":"https://publicliabilityinsurance.co.nz"},"publisher":{"@type":"Organization","name":"Cover4You","url":"https://publicliabilityinsurance.co.nz","logo":{"@type":"ImageObject","url":"https://publicliabilityinsurance.co.nz/logo.png","width":200,"height":60}},"articleSection":"Guides","inLanguage":"en-NZ"}8:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}]
+9:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://publicliabilityinsurance.co.nz/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://publicliabilityinsurance.co.nz/blog/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Public Liability vs Professional Indemnity: Key Differences\",\"item\":\"https://publicliabilityinsurance.co.nz/blog/public-liability-vs-professional-indemnity/\"}]}"}}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/0msuz_siyytjs.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null
