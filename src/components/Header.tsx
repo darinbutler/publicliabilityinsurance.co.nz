@@ -1,0 +1,288 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
+const businessLinks = [
+  { href: '/businesses/builders/', label: 'Builders' },
+  { href: '/businesses/electricians/', label: 'Electricians' },
+  { href: '/businesses/plumbers/', label: 'Plumbers' },
+  { href: '/businesses/dog-walkers/', label: 'Dog Walkers' },
+  { href: '/businesses/cleaners/', label: 'Cleaners' },
+  { href: '/businesses/personal-trainers/', label: 'Personal Trainers' },
+  { href: '/businesses/cafes/', label: 'Cafes' },
+  { href: '/businesses/restaurants/', label: 'Restaurants' },
+  { href: '/businesses/retail-shops/', label: 'Retail Shops' },
+  { href: '/businesses/rideshare-drivers/', label: 'Rideshare Drivers' },
+];
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isSectorsOpen, setIsSectorsOpen] = useState(false);
+  const [isBusinessesOpen, setIsBusinessesOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={`sticky top-0 z-50 w-full transition-shadow duration-200 ${
+        isScrolled ? 'shadow-md' : 'shadow-none'
+      } bg-white`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-white font-bold text-sm">✓</span>
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="font-extrabold text-slate-900 text-xs sm:text-sm leading-none">PublicLiability</span>
+              <span className="font-extrabold text-emerald-600 text-xs sm:text-sm leading-none">Insurance</span>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-1">
+
+            {/* Sectors Dropdown */}
+            <div className="relative group">
+              <button className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors flex items-center gap-1">
+                Sectors
+                <svg
+                  className="w-4 h-4 group-hover:rotate-180 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-0 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <Link
+                  href="/sectors/businesses"
+                  className="block px-4 py-2 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 first:rounded-t-lg"
+                >
+                  Businesses
+                </Link>
+                <Link
+                  href="/sectors/trade-contractors"
+                  className="block px-4 py-2 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600"
+                >
+                  Trade Contractors
+                </Link>
+                <Link
+                  href="/sectors/schools-education"
+                  className="block px-4 py-2 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600"
+                >
+                  Schools & Education
+                </Link>
+                <Link
+                  href="/sectors/public-venues"
+                  className="block px-4 py-2 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 last:rounded-b-lg"
+                >
+                  Public Venues
+                </Link>
+              </div>
+            </div>
+
+            {/* Businesses Dropdown */}
+            <div className="relative group">
+              <button className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors flex items-center gap-1">
+                Businesses
+                <svg className="w-4 h-4 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-0 w-52 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                {businessLinks.map(l => (
+                  <Link key={l.href} href={l.href} className="block px-4 py-2 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 first:rounded-t-lg">
+                    {l.label}
+                  </Link>
+                ))}
+                <Link href="/businesses/" className="block px-4 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-50 border-t border-gray-100 rounded-b-lg">
+                  View all 30 types →
+                </Link>
+              </div>
+            </div>
+
+            <Link
+              href="/coverage"
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors"
+            >
+              Coverage
+            </Link>
+            <Link
+              href="/compare"
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors"
+            >
+              Compare
+            </Link>
+            <Link
+              href="/blog"
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors"
+            >
+              Blog
+            </Link>
+          </nav>
+
+          {/* CTA Button */}
+          <Link
+            href="/contact"
+            className="hidden sm:inline-block px-6 py-2 bg-emerald-600 text-white rounded-lg font-medium text-sm hover:bg-emerald-700 transition-colors"
+          >
+            Get a Quote
+          </Link>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden p-2 hover:bg-slate-100 rounded-lg transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className={`w-6 h-6 transition-transform ${isMenuOpen ? 'rotate-90' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden pb-4 border-t border-slate-200">
+
+            {/* Mobile Sectors */}
+            <button
+              onClick={() => setIsSectorsOpen(!isSectorsOpen)}
+              className="w-full text-left px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50 flex justify-between items-center"
+            >
+              Sectors
+              <svg
+                className={`w-4 h-4 transition-transform ${isSectorsOpen ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
+            </button>
+
+            {isSectorsOpen && (
+              <div className="bg-slate-50">
+                <Link
+                  href="/sectors/businesses"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
+                >
+                  Businesses
+                </Link>
+                <Link
+                  href="/sectors/trade-contractors"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
+                >
+                  Trade Contractors
+                </Link>
+                <Link
+                  href="/sectors/schools-education"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
+                >
+                  Schools & Education
+                </Link>
+                <Link
+                  href="/sectors/public-venues"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600"
+                >
+                  Public Venues
+                </Link>
+              </div>
+            )}
+
+            {/* Mobile Businesses */}
+            <button
+              onClick={() => setIsBusinessesOpen(!isBusinessesOpen)}
+              className="w-full text-left px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50 flex justify-between items-center"
+            >
+              Businesses
+              <svg className={`w-4 h-4 transition-transform ${isBusinessesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {isBusinessesOpen && (
+              <div className="bg-slate-50">
+                {businessLinks.map(l => (
+                  <Link key={l.href} href={l.href} onClick={() => setIsMenuOpen(false)} className="block px-8 py-2 text-sm text-slate-700 hover:text-emerald-600">
+                    {l.label}
+                  </Link>
+                ))}
+                <Link href="/businesses/" onClick={() => setIsMenuOpen(false)} className="block px-8 py-2 text-sm font-semibold text-emerald-700">
+                  View all 30 types →
+                </Link>
+              </div>
+            )}
+
+            <Link
+              href="/coverage"
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
+            >
+              Coverage
+            </Link>
+            <Link
+              href="/compare"
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
+            >
+              Compare
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2 text-sm font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50"
+            >
+              Blog
+            </Link>
+            <div className="px-4 py-3 border-t border-slate-200 mt-2">
+              <Link
+                href="/contact"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-center px-4 py-2 bg-emerald-600 text-white rounded-lg font-medium text-sm hover:bg-emerald-700 transition-colors"
+              >
+                Get a Quote
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}

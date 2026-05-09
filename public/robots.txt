@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow utility pages from indexing
+Disallow: /thank-you/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://publicliabilityinsurance.co.nz/sitemap.xml
+
+# llms.txt (AI crawler guidance)
+# https://publicliabilityinsurance.co.nz/llms.txt
