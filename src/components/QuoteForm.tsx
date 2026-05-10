@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Script from 'next/script';
 
 interface QuoteFormProps {
   variant?: 'default' | 'sidebar';
@@ -66,6 +67,11 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
           <input type="hidden" name="_subject" value="New Quote Request - PublicLiabilityInsurance.co.nz" />
           <input type="hidden" name="_next" value="https://publicliabilityinsurance.co.nz/thank-you" />
           
+
+          <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
+          <div className="flex justify-center">
+            <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-theme="dark" />
+          </div>
 
           <button
             type="submit"
@@ -203,6 +209,11 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
         <input type="hidden" name="_subject" value="New Quote Request - PublicLiabilityInsurance.co.nz" />
         <input type="hidden" name="_next" value="https://publicliabilityinsurance.co.nz/thank-you" />
         
+
+        <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
+        <div className="flex justify-center">
+          <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-theme="light" />
+        </div>
 
         {/* Submit Button */}
         <button
