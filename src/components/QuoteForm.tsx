@@ -21,11 +21,12 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
         <h3 className="font-bold text-base mb-1">Get Your Free Quote</h3>
         <p className="text-emerald-100 text-xs mb-4">No obligation. Same-day response from a licensed NZ broker.</p>
         <form
-          action="https://shiny-bush-41cd.darinbutler.workers.dev"
+          action="/api/submit-form"
           method="POST"
           onSubmit={handleSubmit}
           className="space-y-3"
         >
+          <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
           <input
             type="text"
             name="name"
@@ -92,11 +93,12 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
   return (
     <div className="w-full max-w-xl mx-auto">
       <form
-        action="https://shiny-bush-41cd.darinbutler.workers.dev"
+        action="/api/submit-form"
         method="POST"
         onSubmit={handleSubmit}
         className="space-y-6"
       >
+        <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
         {/* Full Name */}
         <div>
           <label htmlFor="fullName" className="block text-sm font-medium text-slate-700 mb-2">
