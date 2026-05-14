@@ -26,7 +26,7 @@ export default function AboutPage() {
     },
     {
       title: 'No Obligation',
-      description: 'Our comparison service is completely free. You\'re never under any pressure to purchase, and there are no hidden fees on our end.',
+      description: 'Our comparison service has no cost to you. You\'re never under any pressure to purchase, and there are no hidden fees on our end.',
       icon: '✅',
     },
     {
@@ -213,7 +213,7 @@ export default function AboutPage() {
 
       <CTABanner
         heading="Ready to find the right cover?"
-        subtext="Submit your details and a licensed NZ broker will compare options from up to 15 insurers — free, no obligation."
+        subtext="Submit your details and a licensed NZ broker will compare options from up to 15 insurers — no obligation."
       />
     </>
   );

@@ -321,7 +321,7 @@ export default function ClaimsPage() {
 
       <CTABanner
         heading="Not yet insured? Get covered today."
-        subtext="Submit your details and a licensed broker will compare options from multiple NZ insurers — free, no obligation."
+        subtext="Submit your details and a licensed broker will compare options from multiple NZ insurers — no obligation."
       />
     </>
   );

@@ -18,7 +18,7 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
   if (variant === 'sidebar') {
     return (
       <div className="bg-emerald-600 rounded-2xl p-5 text-white">
-        <h3 className="font-bold text-base mb-1">Get Your Free Quote</h3>
+        <h3 className="font-bold text-base mb-1">Get Your Quote</h3>
         <p className="text-emerald-100 text-xs mb-4">No obligation. Same-day response from a licensed NZ broker.</p>
         <form
           action="https://shiny-bush-41cd.darinbutler.workers.dev"
@@ -80,10 +80,10 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
                 Sending...
               </>
             ) : (
-              'Get My Free Quote →'
+              'Get My Quote →'
             )}
           </button>
-          <p className="text-xs text-emerald-200 text-center">Free. No obligation. 100% secure.</p>
+          <p className="text-xs text-emerald-200 text-center">No obligation. 100% secure.</p>
         </form>
       </div>
     );
@@ -97,7 +97,7 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
           { icon: '🔒', label: 'Secure & Confidential' },
           { icon: '✓', label: 'Licensed NZ Brokers' },
           { icon: '⚡', label: 'Same-Day Response' },
-          { icon: '★', label: '100% Free Service' },
+          { icon: '★', label: 'No Obligation' },
         ].map((badge) => (
           <span
             key={badge.label}
@@ -236,7 +236,7 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
                 Sending your request...
               </>
             ) : (
-              <>Get My Free Quote →</>
+              <>Get My Quote →</>
             )}
           </button>
 
@@ -251,7 +251,7 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
             </span>
             <span className="flex items-center gap-1.5 text-xs text-slate-500">
               <svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
-              Free service
+              No fees
             </span>
           </div>
         </form>

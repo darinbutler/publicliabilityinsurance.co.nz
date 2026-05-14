@@ -136,7 +136,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <div className="bg-blue-50 border-2 border-blue-600 rounded-lg p-6 mb-8 sticky top-4">
               <h3 className="text-lg font-bold text-slate-900 mb-3">Need Coverage?</h3>
               <p className="text-sm text-slate-700 mb-4">
-                Get a free quote comparison from NZ insurers in just 5 minutes.
+                Get a quote comparison from NZ insurers in just 5 minutes.
               </p>
               <Link
                 href="/contact"

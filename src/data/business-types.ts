@@ -29,7 +29,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
     heroGradient: 'from-orange-700 to-amber-600',
     metaTitle: 'Public Liability Insurance for Builders NZ | Cover4You',
-    metaDescription: 'Builders public liability insurance in NZ from $800/year. Cover property damage, personal injury & legal costs. Get a free quote online.',
+    metaDescription: 'Builders public liability insurance in NZ from $800/year. Cover property damage, personal injury & legal costs. Get a quote online.',
     headline: 'Public Liability Insurance for Builders',
     intro: 'Building sites involve constant risk of property damage and third-party injury. Our specialist builders insurance protects your business from costly claims while meeting NZ regulations and client requirements.',
     keyRisks: [
@@ -82,7 +82,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80',
     heroGradient: 'from-orange-700 to-amber-600',
     metaTitle: 'Public Liability Insurance for Electricians NZ | Cover4You',
-    metaDescription: 'Electricians public liability insurance NZ from $600/year. Cover electrical fires, injury & property damage. Licensed & compliant. Free quote.',
+    metaDescription: 'Electricians public liability insurance NZ from $600/year. Cover electrical fires, injury & property damage. Licensed & compliant. Compare quotes now.',
     headline: 'Public Liability Insurance for Electricians',
     intro: 'Electrical work carries high risk of fire, shock, and serious injury to yourself and third parties. Our electricians insurance meets NZ regulations and provides comprehensive protection for your growing business.',
     keyRisks: [
@@ -241,7 +241,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80',
     heroGradient: 'from-orange-700 to-amber-600',
     metaTitle: 'Public Liability Insurance for Landscapers NZ | Cover4You',
-    metaDescription: 'Landscapers public liability insurance NZ from $600/year. Cover injury, damage from machinery, trees. NZ-based underwriters. Free quote.',
+    metaDescription: 'Landscapers public liability insurance NZ from $600/year. Cover injury, damage from machinery, trees. NZ-based underwriters. Compare quotes now.',
     headline: 'Public Liability Insurance for Landscapers',
     intro: 'Landscaping work involves heavy machinery, tree work, and working on residential and commercial properties. Our landscapers insurance protects against injury claims, property damage, and tree-related incidents.',
     keyRisks: [
@@ -294,7 +294,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1519338381761-c7523edc1f46?w=1200&q=80',
     heroGradient: 'from-orange-700 to-amber-600',
     metaTitle: 'Public Liability Insurance for Roofers NZ | Cover4You',
-    metaDescription: 'Roofers public liability insurance NZ from $800/year. Cover falls, roof damage, injury. Work at height protection. Get free quote.',
+    metaDescription: 'Roofers public liability insurance NZ from $800/year. Cover falls, roof damage, injury. Work at height protection. Get a quote.',
     headline: 'Public Liability Insurance for Roofers',
     intro: 'Roofing is one of the highest-risk trades in New Zealand. Falls from height, falling debris, and weather exposure create serious injury and property damage risks. Our roofers insurance is specifically tailored to the NZ roofing industry.',
     keyRisks: [
@@ -400,7 +400,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80',
     heroGradient: 'from-orange-700 to-amber-600',
     metaTitle: 'Public Liability Insurance for Flooring Layers NZ | Cover4You',
-    metaDescription: 'Flooring layers public liability insurance NZ from $500/year. Cover laminate, timber, vinyl. Property damage protection. Get free quote.',
+    metaDescription: 'Flooring layers public liability insurance NZ from $500/year. Cover laminate, timber, vinyl. Property damage protection. Get a quote.',
     headline: 'Public Liability Insurance for Flooring Layers',
     intro: 'Flooring installation involves working in client homes and businesses, heavy materials, and risks of property damage and slip injuries. Our flooring insurance protects against costly claims from faulty work and accidents.',
     keyRisks: [
@@ -453,7 +453,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80',
     heroGradient: 'from-orange-700 to-amber-600',
     metaTitle: 'Public Liability Insurance for Drain Layers NZ | Cover4You',
-    metaDescription: 'Drain layers public liability insurance NZ from $600/year. Cover underground damage, collapse risk. Before You Dig partner. Get free quote.',
+    metaDescription: 'Drain layers public liability insurance NZ from $600/year. Cover underground damage, collapse risk. Before You Dig partner. Get a quote.',
     headline: 'Public Liability Insurance for Drain Layers',
     intro: 'Drain laying involves excavation, underground service risks, and property damage from trench collapse or flooding. Our drain layers insurance covers damage to underground services, subsidence claims, and third-party injury.',
     keyRisks: [
@@ -668,7 +668,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80',
     heroGradient: 'from-emerald-700 to-teal-600',
     metaTitle: 'Public Liability Insurance for Personal Trainers NZ | Cover4You',
-    metaDescription: 'Personal trainers public liability insurance NZ from $400/year. Cover client injury from exercise. Fitness professionals. Get free quote.',
+    metaDescription: 'Personal trainers public liability insurance NZ from $400/year. Cover client injury from exercise. Fitness professionals. Get a quote.',
     headline: 'Public Liability Insurance for Personal Trainers',
     intro: 'Personal training involves supervising exercise, using equipment, and working with clients of varying fitness levels. Our trainers insurance covers injury claims from exercise, equipment failure, and third-party injury.',
     keyRisks: [
@@ -986,7 +986,7 @@ export const businessTypes: BusinessType[] = [
     heroImage: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=80',
     heroGradient: 'from-emerald-700 to-teal-600',
     metaTitle: 'Public Liability Insurance for Massage Therapists NZ | Cover4You',
-    metaDescription: 'Massage therapists public liability insurance NZ from $350/year. Cover injury from massage, allergic reaction. NZ therapists. Get free quote.',
+    metaDescription: 'Massage therapists public liability insurance NZ from $350/year. Cover injury from massage, allergic reaction. NZ therapists. Get a quote.',
     headline: 'Public Liability Insurance for Massage Therapists',
     intro: 'Massage therapy involves close client contact, manual techniques, and use of oils and equipment. Our massage therapists insurance covers injury from treatment, allergic reactions, and infection claims.',
     keyRisks: [

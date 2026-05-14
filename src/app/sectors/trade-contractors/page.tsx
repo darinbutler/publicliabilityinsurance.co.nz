@@ -74,7 +74,7 @@ export default function TradeContractorsPage() {
               href="#quote-form"
               className="inline-block px-7 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base rounded-xl transition-colors"
             >
-              Get a Free Quote →
+              Get a Quote →
             </Link>
           </div>
         </section>

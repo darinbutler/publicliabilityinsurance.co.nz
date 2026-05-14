@@ -28,10 +28,10 @@ export default function BusinessesPage() {
             Public Liability Insurance<br />for Every Business
           </h1>
           <p className="text-lg text-emerald-100 max-w-2xl mx-auto mb-8">
-            Whether you're a sole trader dog walker or a busy café owner, find specialist public liability cover designed for your profession. Free quotes, no obligation.
+            Whether you're a sole trader dog walker or a busy café owner, find specialist public liability cover designed for your profession. Quotes with no obligation.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            {['✅ ICNZ Fair Code', '🔒 Licensed NZ Brokers', '💰 Free Service', '⚡ Same-Day Quotes'].map(b => (
+            {['✅ ICNZ Fair Code', '🔒 Licensed NZ Brokers', '💰 No Fees', '⚡ Same-Day Quotes'].map(b => (
               <span key={b} className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-semibold rounded-full">{b}</span>
             ))}
           </div>
@@ -73,9 +73,9 @@ export default function BusinessesPage() {
           {/* Bottom CTA */}
           <div className="bg-emerald-900 rounded-3xl p-10 text-center">
             <h2 className="text-2xl font-extrabold text-white mb-3">Not sure what cover you need?</h2>
-            <p className="text-emerald-200 mb-6 max-w-xl mx-auto">Our specialist brokers will match you to the right policy for your profession and business size. Free, no obligation.</p>
+            <p className="text-emerald-200 mb-6 max-w-xl mx-auto">Our specialist brokers will match you to the right policy for your profession and business size. No obligation.</p>
             <Link href="/contact/" className="inline-block px-8 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-xl transition-colors text-sm shadow-lg">
-              Get My Free Quote →
+              Get My Quote →
             </Link>
           </div>
 

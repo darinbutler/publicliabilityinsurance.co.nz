@@ -113,7 +113,7 @@ export const blogPosts: BlogPost[] = [
         <p>Different industries face different risk profiles. Trade contractors, for example, typically require $5M minimum cover due to the physical nature of their work and industry standards. Schools and education providers need high coverage due to duty of care obligations to young people.</p>
 
         <h2>Next Steps</h2>
-        <p>Use our free quote comparison tool to see how different coverage levels affect your premium. We'll help you find the right balance between protection and cost.</p>
+        <p>Use our quote comparison tool to see how different coverage levels affect your premium. We'll help you find the right balance between protection and cost.</p>
       </div>
     `,
   },

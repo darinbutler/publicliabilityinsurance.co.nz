@@ -6,7 +6,7 @@ import CTABanner from '@/components/CTABanner';
 export const metadata: Metadata = {
   title: 'Public Liability Insurance NZ | Compare & Save | PublicLiability.co.nz',
   description:
-    'Compare public liability insurance from up to 15 insurers. Get free quotes for your business, trade, school, or venue. Fast, transparent, expert advice from licensed NZ brokers.',
+    'Compare public liability insurance from up to 15 insurers. Get quotes for your business, trade, school, or venue. Fast, transparent, expert advice from licensed NZ brokers.',
   keywords:
     'public liability insurance, NZ, compare quotes, business insurance, trade insurance',
   openGraph: {
@@ -52,12 +52,12 @@ export default function Home() {
         '@context': 'https://schema.org',
         '@type': 'InsuranceAgency',
         name: 'PublicLiabilityInsurance.co.nz',
-        description: 'Free broker referral service comparing public liability insurance from up to 15 insurers for businesses, trades, schools, and public venues.',
+        description: 'Broker referral service comparing public liability insurance from up to 15 insurers for businesses, trades, schools, and public venues.',
         url: 'https://publicliabilityinsurance.co.nz',
         email: 'hello@cover4you.co.nz',
         areaServed: { '@type': 'Country', name: 'New Zealand' },
         serviceType: 'Public Liability Insurance Comparison and Referral',
-        priceRange: 'Free referral service',
+        priceRange: 'No fee to policyholders',
         knowsAbout: ['Public Liability Insurance', 'Business Insurance', 'Trade Insurance', 'NZ Insurance'],
       }) }} />
 
@@ -108,7 +108,7 @@ export default function Home() {
                 href="#quote-form"
                 className="px-7 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base rounded-xl transition-colors inline-flex items-center justify-center"
               >
-                Get a Free Quote →
+                Get a Quote →
               </Link>
               <Link
                 href="#sectors"
@@ -195,9 +195,9 @@ export default function Home() {
                 href="#quote-form"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-xl transition-colors shadow-lg shadow-emerald-500/25 text-base"
               >
-                Start Your Free Quote →
+                Start Your Quote →
               </a>
-              <p className="mt-3 text-sm text-slate-500">No obligation · Licensed NZ brokers · Free service</p>
+              <p className="mt-3 text-sm text-slate-500">No obligation · Licensed NZ brokers</p>
             </div>
           </div>
         </section>
@@ -454,8 +454,8 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               {/* Left: Context & Trust */}
               <div className="lg:pt-4">
-                <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Free Referral Service</span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Get Your Free Quote Today</h2>
+                <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Referral Service</span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Get Your Quote Today</h2>
                 <p className="text-lg text-slate-600 mb-8">
                   Tell us about your business and a licensed NZ broker will be in touch with tailored coverage options — same business day.
                 </p>
@@ -464,7 +464,7 @@ export default function Home() {
                     { icon: '✓', title: 'Compare 15+ NZ insurers', desc: 'We shop the whole market so you don\'t have to' },
                     { icon: '✓', title: 'Licensed insurance brokers', desc: 'IBANZ-accredited advisers manage your query' },
                     { icon: '✓', title: 'Same-day response', desc: 'Quotes back within hours, not days' },
-                    { icon: '✓', title: 'Completely free service', desc: 'No fees to you — brokers are paid by insurers' },
+                    { icon: '✓', title: 'No fees to you', desc: 'No fees to you — brokers are paid by insurers' },
                   ].map((item, i) => (
                     <li key={i} className="flex gap-3">
                       <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-bold mt-0.5">{item.icon}</span>
