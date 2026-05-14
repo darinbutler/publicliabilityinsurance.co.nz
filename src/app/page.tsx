@@ -78,11 +78,11 @@ export default function Home() {
       <main className="w-full">
         {/* Hero Section */}
         <section
-          className="relative min-h-[600px] flex items-end"
+          className="relative min-h-[70vh] flex items-end"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center top',
+            backgroundPosition: 'center center',
           }}
         >
           {/* Dark gradient overlay */}
