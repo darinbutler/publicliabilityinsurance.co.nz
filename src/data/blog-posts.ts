@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Guides',
     author: 'Cover4You Team',
     content: `
-      <div class="prose prose-sm max-w-none">
+      
         <h2>What is Public Liability Insurance?</h2>
         <p>Public liability insurance is a form of business insurance that protects your company against legal liability for injuries or property damage caused to members of the public during the course of your business operations.</p>
 
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>Getting the Right Cover</h2>
         <p>The appropriate coverage level depends on your industry, the nature of your work, and your annual turnover. We recommend comparing quotes from multiple insurers to find the best protection at the right price.</p>
-      </div>
+
     `,
   },
   {
@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Guides',
     author: 'Cover4You Team',
     content: `
-      <div class="prose prose-sm max-w-none">
+      
         <h2>Assessing Your Coverage Needs</h2>
         <p>Choosing the right amount of public liability cover is one of the most important decisions you'll make. Too little coverage leaves you exposed to financial risk; too much may mean unnecessary expense.</p>
 
@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>Next Steps</h2>
         <p>Use our quote comparison tool to see how different coverage levels affect your premium. We'll help you find the right balance between protection and cost.</p>
-      </div>
+
     `,
   },
   {
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Guides',
     author: 'Cover4You Team',
     content: `
-      <div class="prose prose-sm max-w-none">
+      
         <h2>Understanding the Key Differences</h2>
         <p>Many business owners confuse public liability insurance with professional indemnity insurance. While they both protect against liability claims, they cover very different types of incidents.</p>
 
@@ -181,7 +181,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>Cost Considerations</h2>
         <p>Professional indemnity insurance is typically more expensive than public liability because professional errors can result in significant financial claims. However, for professional service providers, it's an essential investment.</p>
-      </div>
+
     `,
   },
   {
@@ -193,7 +193,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Industry Insights',
     author: 'Cover4You Team',
     content: `
-      <div class="prose prose-sm max-w-none">
+      
         <h2>Real Claims, Real Costs</h2>
         <p>Understanding the types of claims that actually happen helps you appreciate why adequate public liability insurance is so important. Here are the five most common claims we see in New Zealand.</p>
 
@@ -232,7 +232,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>Protect Yourself Now</h2>
         <p>Compare public liability insurance quotes from NZ insurers today and ensure you have the right protection for your business.</p>
-      </div>
+
     `,
   },
   {
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Industry Insights',
     author: 'Cover4You Team',
     content: `
-      <div class="prose prose-sm max-w-none">
+      
         <h2>The Shift to Higher Coverage</h2>
         <p>Over the last five years, $5M public liability cover has become the de facto industry standard for trade contractors in New Zealand. This shift reflects the high-risk nature of construction and trade work, combined with increasing awareness of potential liabilities.</p>
 
@@ -303,7 +303,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>Getting Competitive Rates</h2>
         <p>While $5M cover costs more than $2M, many insurers offer competitive rates for experienced contractors with good safety records. Use our quote comparison tool to find the best rates for your coverage level.</p>
-      </div>
+
     `,
   },
   {
@@ -315,7 +315,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Industry Insights',
     author: 'Cover4You Team',
     content: `
-      <div class="prose prose-sm max-w-none">
+      
         <h2>The Duty of Care in Education</h2>
         <p>Under New Zealand law, schools, early childhood centers, and other education providers have a strict legal duty of care towards the children in their charge. This duty extends beyond simple negligence—you must take all reasonable steps to ensure child safety.</p>
 
@@ -388,7 +388,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>Next Steps</h2>
         <p>Review your current coverage and compare options to ensure you have adequate protection for your institution size and risk profile. Get a quote today and ensure your duty of care is properly protected.</p>
-      </div>
+
     `,
   },
 ];

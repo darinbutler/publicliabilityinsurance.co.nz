@@ -58,24 +58,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     .filter((p) => p.category === post.category && p.slug !== post.slug)
     .slice(0, 3);
 
+  // Estimated read time
+  const wordCount = post.content.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
+  const readMins = Math.max(1, Math.ceil(wordCount / 220));
+
   return (
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-[400px] flex items-end"
+        className="relative min-h-[420px] flex items-end"
         style={{
           backgroundImage: post.image ? `url(${post.image})` : 'url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1920&q=80)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-950/75 via-gray-800/25 to-transparent" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-32 w-full">
-          <Link href="/blog" className="text-emerald-400 hover:text-white transition mb-4 inline-block text-sm font-semibold">
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-gray-900/30 to-transparent" />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-32 w-full">
+          <Link href="/blog" className="text-emerald-400 hover:text-emerald-300 transition mb-5 inline-flex items-center gap-1 text-sm font-semibold">
             ← Back to Blog
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="px-3 py-1 bg-emerald-600 text-white rounded-full text-sm font-semibold">
+            <span className="px-3 py-1 bg-emerald-600 text-white rounded-full text-xs font-bold uppercase tracking-wide">
               {post.category}
             </span>
             <span className="text-slate-300 text-sm">{post.author}</span>
@@ -86,129 +90,200 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 day: 'numeric',
               })}
             </span>
+            <span className="text-slate-400 text-sm">· {readMins} min read</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight max-w-3xl">
             {post.title}
           </h1>
+          {post.excerpt && (
+            <p className="mt-4 text-lg text-slate-300 max-w-2xl leading-relaxed">{post.excerpt}</p>
+          )}
         </div>
       </section>
 
       <main className="w-full">
-        <div className="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main Article Content */}
-          <article className="lg:col-span-2">
-            {/* Article Content */}
+        {/* Breadcrumb strip */}
+        <div className="border-b border-slate-100 bg-white">
+          <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-2 text-xs text-slate-400">
+            <Link href="/" className="hover:text-emerald-600 transition">Home</Link>
+            <span>›</span>
+            <Link href="/blog" className="hover:text-emerald-600 transition">Blog</Link>
+            <span>›</span>
+            <span className="text-slate-600 truncate max-w-xs">{post.title}</span>
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-12">
+          {/* Main Article */}
+          <article>
+            {/* Article body */}
             <div
-              className="prose prose-sm md:prose-base max-w-none text-slate-700 mb-8"
+              className="article-content mb-10"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
-            {/* Article Meta */}
-            <div className="border-t border-slate-200 pt-8 mt-8">
-              <div className="bg-slate-50 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2">About the Author</h3>
-                <p className="text-slate-700">
-                  {post.author} is part of the Cover4You team, committed to making public liability insurance transparent and accessible for all NZ businesses.
-                </p>
+            {/* Mid-article CTA */}
+            <div className="my-10 rounded-2xl bg-emerald-50 border border-emerald-200 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="flex-1">
+                <p className="font-bold text-slate-900 text-base mb-1">Ready to compare coverage?</p>
+                <p className="text-sm text-slate-600">Get quotes from leading NZ insurers — no obligation, same-day response.</p>
+              </div>
+              <Link
+                href="/contact"
+                className="flex-shrink-0 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition text-sm whitespace-nowrap"
+              >
+                Get a Quote →
+              </Link>
+            </div>
+
+            {/* Author card */}
+            <div className="border-t border-slate-100 pt-8 mt-4">
+              <div className="flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold text-lg">
+                  C
+                </div>
+                <div>
+                  <p className="font-bold text-slate-900">{post.author}</p>
+                  <p className="text-sm text-slate-500 mt-0.5">Insurance Specialist · Cover4You</p>
+                  <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+                    The Cover4You team are committed to making public liability insurance transparent and accessible for all NZ businesses. Our advisers hold relevant NZ insurance qualifications.
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Share Section */}
-            <div className="mt-8 py-8 border-t border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-4">Share This Article</h3>
-              <div className="flex gap-3">
-                <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-sm font-semibold">
+            {/* Share section */}
+            <div className="mt-8 pt-8 border-t border-slate-100">
+              <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Share this article</p>
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://publicliabilityinsurance.co.nz/blog/${slug}/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#1877F2] text-white rounded-lg hover:opacity-90 transition text-sm font-semibold"
+                >
                   Facebook
-                </button>
-                <button className="px-4 py-2 bg-blue-400 text-white rounded hover:bg-blue-500 transition text-sm font-semibold">
-                  Twitter
-                </button>
-                <button className="px-4 py-2 bg-slate-200 text-slate-900 rounded hover:bg-slate-300 transition text-sm font-semibold">
-                  Copy Link
-                </button>
+                </a>
+                <a
+                  href={`https://twitter.com/intent/tweet?url=https://publicliabilityinsurance.co.nz/blog/${slug}/&text=${encodeURIComponent(post.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#1DA1F2] text-white rounded-lg hover:opacity-90 transition text-sm font-semibold"
+                >
+                  Twitter / X
+                </a>
+                <a
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=https://publicliabilityinsurance.co.nz/blog/${slug}/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white rounded-lg hover:opacity-90 transition text-sm font-semibold"
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
           </article>
 
           {/* Sidebar */}
-          <aside>
-            {/* Quick Quote CTA */}
-            <div className="bg-blue-50 border-2 border-blue-600 rounded-lg p-6 mb-8 sticky top-4">
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Need Coverage?</h3>
-              <p className="text-sm text-slate-700 mb-4">
-                Get a quote comparison from NZ insurers in just 5 minutes.
-              </p>
-              <Link
-                href="/contact"
-                className="block w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition text-center text-sm"
-              >
-                Get Quote Now
-              </Link>
-            </div>
-
-            {/* Related Posts */}
-            {relatedPosts.length > 0 && (
-              <div className="mb-8">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Related Articles</h3>
-                <div className="space-y-4">
-                  {relatedPosts.map((relatedPost) => (
-                    <Link
-                      key={relatedPost.slug}
-                      href={`/blog/${relatedPost.slug}`}
-                      className="block p-4 bg-white border border-slate-200 rounded-lg hover:shadow-md hover:border-blue-500 transition"
-                    >
-                      <h4 className="font-semibold text-slate-900 text-sm mb-2 line-clamp-2 hover:text-blue-600">
-                        {relatedPost.title}
-                      </h4>
-                      <p className="text-xs text-slate-500">
-                        {new Date(relatedPost.date).toLocaleDateString('en-NZ', {
-                          month: 'short',
-                          day: 'numeric',
-                        })}
-                      </p>
-                    </Link>
-                  ))}
+          <aside className="space-y-6">
+            {/* Sticky container */}
+            <div className="sticky top-6 space-y-6">
+              {/* CTA card */}
+              <div className="rounded-2xl bg-emerald-600 p-6 text-white">
+                <p className="text-xs font-bold uppercase tracking-widest text-emerald-200 mb-2">Need Coverage?</p>
+                <h3 className="text-lg font-bold mb-2">Get Your Quote Today</h3>
+                <p className="text-sm text-emerald-100 mb-4 leading-relaxed">
+                  Compare quotes from NZ's leading insurers. Same-day response from a licensed broker.
+                </p>
+                <Link
+                  href="/contact"
+                  className="block w-full px-4 py-3 bg-white hover:bg-emerald-50 text-emerald-700 font-bold rounded-xl transition text-center text-sm"
+                >
+                  Get a Quote →
+                </Link>
+                <div className="mt-3 flex justify-center gap-4 text-xs text-emerald-200">
+                  <span>✓ No obligation</span>
+                  <span>✓ Licensed brokers</span>
                 </div>
               </div>
-            )}
 
-            {/* Quick Links */}
-            <div className="bg-slate-50 rounded-lg p-6">
-              <h3 className="font-bold text-slate-900 mb-4">Quick Links</h3>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <Link href="/coverage" className="text-blue-600 hover:text-blue-700 font-semibold">
-                    → Coverage Guide
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/compare" className="text-blue-600 hover:text-blue-700 font-semibold">
-                    → Compare Insurers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="text-blue-600 hover:text-blue-700 font-semibold">
-                    → About Cover4You
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-blue-600 hover:text-blue-700 font-semibold">
-                    → Contact Us
-                  </Link>
-                </li>
-              </ul>
+              {/* Related posts */}
+              {relatedPosts.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Related Articles</h3>
+                  <div className="space-y-3">
+                    {relatedPosts.map((relatedPost) => (
+                      <Link
+                        key={relatedPost.slug}
+                        href={`/blog/${relatedPost.slug}`}
+                        className="block p-4 bg-white border border-slate-200 rounded-xl hover:border-emerald-400 hover:shadow-sm transition group"
+                      >
+                        <h4 className="font-semibold text-slate-900 text-sm leading-snug mb-2 group-hover:text-emerald-700 transition line-clamp-2">
+                          {relatedPost.title}
+                        </h4>
+                        <p className="text-xs text-slate-400">
+                          {new Date(relatedPost.date).toLocaleDateString('en-NZ', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                          })}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Quick links */}
+              <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+                <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Explore</h3>
+                <ul className="space-y-2.5 text-sm">
+                  {[
+                    { href: '/coverage', label: 'Coverage Guide' },
+                    { href: '/compare', label: 'Compare Insurers' },
+                    { href: '/sectors/trade-contractors', label: 'Trade Contractors' },
+                    { href: '/sectors/businesses', label: 'Businesses & Retail' },
+                    { href: '/contact', label: 'Get a Quote' },
+                  ].map(({ href, label }) => (
+                    <li key={href}>
+                      <Link href={href} className="flex items-center gap-1.5 text-emerald-700 hover:text-emerald-900 font-medium transition">
+                        <span className="text-emerald-400">›</span> {label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </aside>
         </div>
 
-        {/* Full Width Quote Form Section */}
-        <section className="w-full bg-slate-50 py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Get Covered?</h2>
-            <p className="text-lg text-slate-600 mb-8">
-              Now that you understand your insurance needs, get personalised quotes from multiple NZ insurers.
-            </p>
-            <QuoteForm />
+        {/* Bottom Quote Form */}
+        <section className="w-full bg-slate-50 border-t border-slate-200 py-16 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              <div>
+                <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Referral Service</span>
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Get Covered?</h2>
+                <p className="text-lg text-slate-600 mb-6">
+                  Now that you understand your insurance needs, get personalised quotes from multiple NZ insurers.
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    'Compare 15+ NZ insurers in one place',
+                    'Same-day response from a licensed broker',
+                    'No obligation — just clear, honest advice',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
+                      <span className="text-emerald-500 font-bold mt-0.5">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <QuoteForm />
+              </div>
+            </div>
           </div>
         </section>
 
