@@ -40,10 +40,11 @@ export default function ComparePage() {
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-slate-800 text-white">
-                    <th className="border-r border-slate-600 p-4 text-left font-semibold min-w-[180px]">Coverage Feature</th>
+                    <th className="border-r border-slate-600 p-4 text-left font-semibold min-w-[200px]">Coverage Feature</th>
                     {insurers.map((insurer) => (
-                      <th key={insurer.name} className="border-r border-slate-600 last:border-r-0 p-4 text-center font-semibold">
-                        {insurer.name}
+                      <th key={insurer.name} className="border-r border-slate-600 last:border-r-0 p-4 text-center font-semibold min-w-[120px]">
+                        <div>{insurer.name}</div>
+                        <div className="text-xs font-normal text-slate-300 mt-0.5">{insurer.spRating} S&amp;P</div>
                       </th>
                     ))}
                   </tr>
@@ -51,7 +52,10 @@ export default function ComparePage() {
                 <tbody>
                   {coverageFeatures.map((row, idx) => (
                     <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                      <td className="border-t border-r border-slate-300 p-4 font-medium text-slate-900">{row.feature}</td>
+                      <td className="border-t border-r border-slate-300 p-4">
+                        <div className="font-medium text-slate-900">{row.feature}</div>
+                        <div className="text-xs text-slate-500 mt-0.5">{row.notes}</div>
+                      </td>
                       {row.included.map((included, i) => (
                         <td key={i} className="border-t border-r border-slate-300 last:border-r-0 p-4 text-center">
                           {included ? (
@@ -130,41 +134,59 @@ export default function ComparePage() {
             {insurers.map((insurer) => (
               <div key={insurer.name} className="border-2 border-slate-200 rounded-xl p-6 hover:border-emerald-400 hover:shadow-lg transition-all">
                 <div className="mb-4">
-                  <h3 className="text-2xl font-bold text-slate-900">{insurer.name}</h3>
-                  <div className="flex items-center gap-4 mt-2 text-sm text-slate-600">
-                    <span>Established {insurer.established}</span>
-                    <span className={`px-2 py-1 rounded-full text-xs font-semibold ${insurer.nzOwned ? 'bg-emerald-100 text-emerald-800' : 'bg-blue-100 text-blue-800'}`}>
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 className="text-2xl font-bold text-slate-900">{insurer.name}</h3>
+                      <p className="text-sm text-slate-500 mt-0.5">{insurer.parent}</p>
+                    </div>
+                    <span className="px-2 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 whitespace-nowrap">{insurer.spRating} S&P</span>
+                  </div>
+                  <div className="flex items-center gap-3 mt-3 flex-wrap">
+                    <span className="text-xs text-slate-500">Est. {insurer.established}</span>
+                    <span className={`px-2 py-1 rounded-full text-xs font-semibold ${insurer.nzOwned ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-600'}`}>
                       {insurer.nzOwned ? 'NZ-Owned' : 'International'}
+                    </span>
+                    <span className="px-2 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
+                      {insurer.distributionModel}
                     </span>
                   </div>
                 </div>
 
-                <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-1">Premium Range:</p>
-                  <p className="text-lg font-semibold text-emerald-600">{insurer.premiumRange}</p>
+                <div className="mb-4 bg-emerald-50 rounded-lg px-4 py-3">
+                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-0.5">Indicative Premium Range</p>
+                  <p className="text-lg font-bold text-emerald-700">{insurer.premiumRange}</p>
+                </div>
+
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Best For</p>
+                  <p className="text-sm text-slate-700 italic">{insurer.bestFor}</p>
+                </div>
+
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Claims Speed</p>
+                  <p className="text-sm text-slate-700">{insurer.claimsSpeed}</p>
                 </div>
 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-1">Customer Service:</p>
-                  <p className="text-slate-700 text-sm">{insurer.customerService}</p>
-                </div>
-
-                <div className="mb-4">
-                  <p className="text-sm font-semibold text-slate-700 mb-1">Claims Processing:</p>
-                  <p className="text-slate-700 text-sm">{insurer.claimsSpeed}</p>
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold text-slate-700 mb-3">Key Features:</p>
-                  <ul className="space-y-2">
+                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Key Features</p>
+                  <ul className="space-y-1.5">
                     {insurer.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-slate-700">
-                        <span className="text-emerald-600 font-bold mt-0.5 flex-shrink-0">✓</span>
+                        <span className="text-emerald-500 font-bold mt-0.5 flex-shrink-0">✓</span>
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
+
+                <a
+                  href={insurer.website}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="inline-flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700 font-medium"
+                >
+                  Visit {insurer.websiteLabel} →
+                </a>
               </div>
             ))}
           </div>
