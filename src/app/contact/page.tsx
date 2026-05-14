@@ -32,17 +32,43 @@ export default function ContactPage() {
 
       <main className="w-full">
         {/* Main Quote Form - Above The Fold */}
-        <section id="quote-form" className="max-w-4xl mx-auto px-4 py-16">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Get Your Personalised Quote</h2>
-            <p className="text-lg text-slate-600 mb-2">
-              It takes just 5 minutes to get quotes from multiple NZ insurance providers.
-            </p>
-            <p className="text-slate-600">
-              No obligation. No spam. We'll match you with the best coverage at the right price.
-            </p>
+        <section id="quote-form" className="w-full py-16 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              {/* Left: Context & Trust */}
+              <div className="lg:pt-4">
+                <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Free Referral Service</span>
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">Get Your Personalised Quote</h2>
+                <p className="text-lg text-slate-600 mb-8">
+                  It takes just 5 minutes to get quotes from multiple NZ insurance providers. No obligation. No spam.
+                </p>
+                <ul className="space-y-4 mb-8">
+                  {[
+                    { icon: '✓', title: 'Compare 15+ NZ insurers', desc: 'We shop the whole market so you don\'t have to' },
+                    { icon: '✓', title: 'Licensed insurance brokers', desc: 'IBANZ-accredited advisers manage your query' },
+                    { icon: '✓', title: 'Same-day response', desc: 'Quotes back within hours, not days' },
+                    { icon: '✓', title: 'Completely free service', desc: 'No fees to you — brokers are paid by insurers' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-bold mt-0.5">{item.icon}</span>
+                      <div>
+                        <p className="font-semibold text-slate-900">{item.title}</p>
+                        <p className="text-sm text-slate-500">{item.desc}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+                  <p className="text-sm text-slate-600 italic">&ldquo;Fast, professional service. Got three quotes in my inbox the same afternoon I submitted the form.&rdquo;</p>
+                  <p className="text-xs font-semibold text-slate-500 mt-2">— Wellington business owner</p>
+                </div>
+              </div>
+              {/* Right: Form */}
+              <div>
+                <QuoteForm />
+              </div>
+            </div>
           </div>
-          <QuoteForm />
         </section>
 
         {/* Quick Response Timeline */}

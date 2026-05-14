@@ -141,59 +141,64 @@ export default function Home() {
         </section>
 
         {/* How It Works */}
-        <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
+        <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">How It Works</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Getting the right public liability insurance for your NZ business is simpler than you think.
+              <span className="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Simple Process</span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">How It Works</h2>
+              <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                Getting the right public liability insurance for your NZ business is simpler than you think. Four steps to fully covered.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {[
                 {
-                  step: '01',
+                  step: '1',
                   title: 'Tell Us About Your Business',
-                  description: 'Fill out our quick form with your business type, location, and coverage needs. Takes just 2 minutes. No obligation, no hard sell.',
-                  icon: '📋',
+                  description: 'Fill out our quick form with your business type, location, and coverage needs. Takes just 2 minutes.',
                 },
                 {
-                  step: '02',
-                  title: 'We Compare Up to 15+ Insurers',
-                  description: 'Our licensed brokers compare policies from leading NZ public liability insurers to find the best fit for your business and risk profile.',
-                  icon: '🔍',
+                  step: '2',
+                  title: 'We Compare 15+ Insurers',
+                  description: 'Our licensed brokers compare policies from leading NZ public liability insurers to find the best fit for your risk profile.',
                 },
                 {
-                  step: '03',
+                  step: '3',
                   title: 'Receive Your Tailored Quote',
-                  description: 'Get a clear, plain-English quote quickly. No jargon, no hidden fees — just the right cover at the right price for your business.',
-                  icon: '💬',
+                  description: 'Get a clear, plain-English quote fast. No jargon, no hidden fees — just the right cover at the right price.',
                 },
                 {
-                  step: '04',
+                  step: '4',
                   title: 'Get Covered with Confidence',
                   description: 'Choose your policy and get covered. Your certificate is issued promptly so you can get back to running your business.',
-                  icon: '✅',
                 },
               ].map((item, idx, arr) => (
-                <div key={idx} className="relative">
+                <div key={idx} className="relative flex flex-col items-center text-center">
                   {idx < arr.length - 1 && (
                     <div
-                      className="hidden lg:block absolute top-10 h-0.5 bg-gradient-to-r from-emerald-300 to-emerald-100 z-0"
-                      style={{ width: 'calc(100% - 2.5rem)', left: 'calc(50% + 2.5rem)' }}
+                      className="hidden lg:block absolute top-9 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-800 z-0"
+                      style={{ width: 'calc(100% - 4rem)', left: 'calc(50% + 2rem)' }}
                     />
                   )}
-                  <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md hover:border-emerald-300 transition-all duration-300 relative z-10 h-full flex flex-col">
-                    <div className="text-3xl mb-3">{item.icon}</div>
-                    <div className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Step {item.step}</div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed flex-1">{item.description}</p>
+                  <div className="relative z-10 flex items-center justify-center w-[72px] h-[72px] rounded-full bg-emerald-500 text-white text-2xl font-extrabold mb-5 shadow-lg shadow-emerald-500/30 ring-4 ring-emerald-500/20">
+                    {item.step}
                   </div>
+                  <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
                 </div>
               ))}
             </div>
 
+            <div className="text-center">
+              <a
+                href="#quote-form"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-xl transition-colors shadow-lg shadow-emerald-500/25 text-base"
+              >
+                Start Your Free Quote →
+              </a>
+              <p className="mt-3 text-sm text-slate-500">No obligation · Licensed NZ brokers · Free service</p>
+            </div>
           </div>
         </section>
 
@@ -444,16 +449,43 @@ export default function Home() {
         </section>
 
         {/* Quote Form Section */}
-        <section id="quote-form" className="w-full py-20 px-4 bg-slate-900">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-10">
-              <span className="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Free Referral Service</span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">Get Your Quote</h2>
-              <p className="text-lg text-slate-400 max-w-xl mx-auto">
-                Tell us about your business and a licensed NZ broker will be in touch with tailored options.
-              </p>
+        <section id="quote-form" className="w-full py-20 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              {/* Left: Context & Trust */}
+              <div className="lg:pt-4">
+                <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Free Referral Service</span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Get Your Free Quote Today</h2>
+                <p className="text-lg text-slate-600 mb-8">
+                  Tell us about your business and a licensed NZ broker will be in touch with tailored coverage options — same business day.
+                </p>
+                <ul className="space-y-4 mb-8">
+                  {[
+                    { icon: '✓', title: 'Compare 15+ NZ insurers', desc: 'We shop the whole market so you don\'t have to' },
+                    { icon: '✓', title: 'Licensed insurance brokers', desc: 'IBANZ-accredited advisers manage your query' },
+                    { icon: '✓', title: 'Same-day response', desc: 'Quotes back within hours, not days' },
+                    { icon: '✓', title: 'Completely free service', desc: 'No fees to you — brokers are paid by insurers' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-bold mt-0.5">{item.icon}</span>
+                      <div>
+                        <p className="font-semibold text-slate-900">{item.title}</p>
+                        <p className="text-sm text-slate-500">{item.desc}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+                  <p className="text-sm text-slate-600 italic">&ldquo;Fast, professional service. Got three quotes in my inbox the same afternoon I submitted the form.&rdquo;</p>
+                  <p className="text-xs font-semibold text-slate-500 mt-2">— Wellington business owner</p>
+                </div>
+              </div>
+
+              {/* Right: Form */}
+              <div>
+                <QuoteForm />
+              </div>
             </div>
-            <QuoteForm />
           </div>
         </section>
 
