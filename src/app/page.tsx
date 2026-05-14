@@ -80,7 +80,7 @@ export default function Home() {
         <section
           className="relative min-h-[600px] flex items-end"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-oQrJ82Iekqk?auto=format&fit=crop&w=1920&q=80)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80)',
             backgroundSize: 'cover',
             backgroundPosition: 'center top',
           }}
