@@ -119,11 +119,15 @@ export default function Footer() {
           <div className="bg-slate-800 rounded-xl p-5 text-xs text-slate-400">
             <p className="font-semibold text-slate-300 mb-2">How This Site Works</p>
             <p className="leading-relaxed">
-              PublicLiabilityInsurance.co.nz is a comparison and referral service operated by Cover4You — not an insurance underwriter or licensed insurer.
+              PublicLiabilityInsurance.co.nz is a comparison and referral service operated by{' '}
+              <a href="https://www.cover4you.co.nz" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline">Cover4You</a>
+              {' '}— not an insurance underwriter or licensed insurer.
               We compare information from multiple ICNZ-registered insurers and refer qualified enquiries to licensed NZ insurance advisers and brokers.
               Our service is free to use. We may receive a referral fee from insurers when a policy is taken out through our referral.
               All information on this site is general in nature and does not constitute personalised financial advice under the Financial Markets Conduct Act 2013.
-              Always read the policy wording and consult a licensed adviser before purchasing. Financial advice is provided by Cover4You, a registered financial advice provider.
+              Always read the policy wording and consult a licensed adviser before purchasing. Financial advice is provided by{' '}
+              <a href="https://www.cover4you.co.nz" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline">Cover4You</a>
+              , a registered financial advice provider.
             </p>
           </div>
         </div>
@@ -131,7 +135,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-            <p>&copy; {currentYear} Cover4You, a trading style of GDS. All rights reserved.</p>
+            <p>&copy; {currentYear} <a href="https://www.cover4you.co.nz" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 transition-colors">Cover4You</a>, a trading style of GDS. All rights reserved.</p>
             <div className="flex flex-wrap gap-6">
               <Link href="/privacy" className="hover:text-emerald-400 transition-colors">
                 Privacy Policy
