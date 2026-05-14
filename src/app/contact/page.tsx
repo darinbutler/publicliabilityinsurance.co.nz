@@ -72,45 +72,71 @@ export default function ContactPage() {
         </section>
 
         {/* Quick Response Timeline */}
-        <section className="w-full bg-slate-50 py-12 px-4">
+        <section className="w-full bg-slate-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">What Happens Next?</h3>
-            <div className="space-y-4">
-              {[
-                {
-                  time: 'Immediate',
-                  action: 'You submit your details',
-                  description: 'Simple online form takes about 5 minutes',
-                },
-                {
-                  time: 'Within 30 minutes',
-                  action: 'Initial quote comparison',
-                  description: 'See preliminary quotes from multiple insurers',
-                },
-                {
-                  time: 'Within 2 hours',
-                  action: 'Detailed comparison delivered',
-                  description: 'Full quotes with coverage details and pricing breakdown',
-                },
-                {
-                  time: 'Same day',
-                  action: 'You choose and get covered',
-                  description: 'Select your preferred insurer and your policy can be active',
-                },
-              ].map((step, idx) => (
-                <div key={idx} className="flex gap-6 bg-white p-6 rounded-lg border border-slate-200">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold text-sm">
-                      {idx + 1}
+            <div className="text-center mb-12">
+              <span className="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Timeline</span>
+              <h3 className="text-3xl font-extrabold text-white mb-3">What Happens Next?</h3>
+              <p className="text-slate-400 text-lg max-w-xl mx-auto">From the moment you submit, here's exactly what to expect.</p>
+            </div>
+
+            <div className="relative">
+              {/* Vertical connector line */}
+              <div className="absolute left-8 top-10 bottom-10 w-0.5 bg-gradient-to-b from-emerald-500 via-emerald-600 to-emerald-900 hidden sm:block" />
+
+              <div className="space-y-4">
+                {[
+                  {
+                    time: 'Immediate',
+                    icon: '📋',
+                    action: 'You submit your details',
+                    description: 'Simple online form takes about 5 minutes. Tell us your business type, size, and coverage needs.',
+                    color: 'emerald',
+                  },
+                  {
+                    time: 'Within 30 minutes',
+                    icon: '🔍',
+                    action: 'Initial quote comparison',
+                    description: 'Your licensed broker begins comparing policies from up to 15 leading NZ insurers against your profile.',
+                    color: 'emerald',
+                  },
+                  {
+                    time: 'Within 2 hours',
+                    icon: '📊',
+                    action: 'Detailed comparison delivered',
+                    description: 'You receive a clear, plain-English comparison with full quotes, coverage details and pricing breakdown.',
+                    color: 'emerald',
+                  },
+                  {
+                    time: 'Same day',
+                    icon: '✅',
+                    action: 'You choose and get covered',
+                    description: 'Select your preferred insurer. Your policy certificate is issued and your business is protected.',
+                    color: 'emerald',
+                  },
+                ].map((step, idx) => (
+                  <div key={idx} className="relative flex gap-5 sm:gap-8">
+                    {/* Step circle */}
+                    <div className="flex-shrink-0 relative z-10">
+                      <div className="flex flex-col items-center justify-center w-16 h-16 rounded-2xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/30 ring-4 ring-emerald-500/20">
+                        <span className="text-xl leading-none">{step.icon}</span>
+                        <span className="text-[10px] font-bold mt-0.5">{idx + 1}</span>
+                      </div>
+                    </div>
+
+                    {/* Card */}
+                    <div className="flex-1 bg-slate-800 rounded-2xl p-5 border border-slate-700 hover:border-emerald-500/50 transition-all group mb-0">
+                      <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                        <h4 className="text-base font-bold text-white group-hover:text-emerald-400 transition">{step.action}</h4>
+                        <span className="inline-block px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-400 whitespace-nowrap">
+                          {step.time}
+                        </span>
+                      </div>
+                      <p className="text-slate-400 text-sm leading-relaxed">{step.description}</p>
                     </div>
                   </div>
-                  <div>
-                    <p className="text-sm font-semibold text-slate-500 uppercase">{step.time}</p>
-                    <h4 className="text-lg font-bold text-slate-900 mt-1">{step.action}</h4>
-                    <p className="text-slate-700 mt-1">{step.description}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
