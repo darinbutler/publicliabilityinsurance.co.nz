@@ -1,18 +1,46 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
+import Script from 'next/script';
+
+const TURNSTILE_SITE_KEY = '0x4AAAAAADMnq1OKyxf3JvVv';
 
 interface QuoteFormProps {
   variant?: 'default' | 'sidebar';
 }
 
 export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError('');
+    const fd = new FormData(e.currentTarget);
+    const cfToken = fd.get('cf-turnstile-response');
+    if (!cfToken) {
+      setError('Please wait a moment for the security check to finish, then try again.');
+      return;
+    }
+    const data: Record<string, string> = {};
+    fd.forEach((value, key) => {
+      if (typeof value === 'string') data[key] = value;
+    });
     setIsLoading(true);
-    // Form will submit to FormSubmit.co via the form action
-    // No need to prevent default - let the form submit naturally
+    try {
+      const res = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, cfTurnstileToken: cfToken }),
+      });
+      if (!res.ok) throw new Error('Submission failed');
+      router.push('/thank-you/');
+    } catch {
+      setError('Something went wrong. Please try again.');
+      setIsLoading(false);
+    }
   };
 
   if (variant === 'sidebar') {
@@ -20,12 +48,9 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
       <div className="bg-emerald-600 rounded-2xl p-5 text-white">
         <h3 className="font-bold text-base mb-1">Get Your Quote</h3>
         <p className="text-emerald-100 text-xs mb-4">No obligation. Same-day response from a licensed NZ broker.</p>
-        <form
-          action="https://shiny-bush-41cd.darinbutler.workers.dev"
-          method="POST"
-          onSubmit={handleSubmit}
-          className="space-y-3"
-        >
+        <form onSubmit={handleSubmit} className="space-y-3">
+          <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+          <input type="hidden" name="_subject" value="New Quote Request - PublicLiabilityInsurance.co.nz" />
           <input
             type="text"
             name="name"
@@ -61,10 +86,12 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
             <option value="Other">Other</option>
           </select>
 
-          {/* Hidden Fields */}
-          <input type="hidden" name="_subject" value="New Quote Request - PublicLiabilityInsurance.co.nz" />
-          <input type="hidden" name="_next" value="https://publicliabilityinsurance.co.nz/thank-you" />
-          
+          <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
+          <div className="flex justify-center">
+            <div className="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-size="invisible" />
+          </div>
+
+          {error && <p className="text-xs bg-white/10 text-white border border-white/20 rounded-lg px-3 py-2">{error}</p>}
 
           <button
             type="submit"
@@ -111,12 +138,10 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
 
       {/* Form Card */}
       <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-xl p-8">
-        <form
-          action="https://shiny-bush-41cd.darinbutler.workers.dev"
-          method="POST"
-          onSubmit={handleSubmit}
-          className="space-y-5"
-        >
+        <form onSubmit={handleSubmit} className="space-y-5">
+          <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+          <input type="hidden" name="_subject" value="New Quote Request - PublicLiabilityInsurance.co.nz" />
+
           {/* Name + Email row */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
@@ -217,9 +242,12 @@ export default function QuoteForm({ variant = 'default' }: QuoteFormProps) {
             />
           </div>
 
-          {/* Hidden Fields */}
-          <input type="hidden" name="_subject" value="New Quote Request - PublicLiabilityInsurance.co.nz" />
-          <input type="hidden" name="_next" value="https://publicliabilityinsurance.co.nz/thank-you" />
+          <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
+          <div className="flex justify-center">
+            <div className="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-size="invisible" />
+          </div>
+
+          {error && <p className="text-sm bg-red-50 text-red-700 border border-red-200 rounded-lg px-3 py-2">{error}</p>}
 
           {/* Submit Button */}
           <button
