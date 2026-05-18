@@ -4,8 +4,6 @@ import { useRef, useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import TurnstileWidget, { type TurnstileHandle } from './TurnstileWidget';
 
-const TURNSTILE_SITE_KEY = '0x4AAAAAADMnq1OKyxf3JvVv';
-
 interface QuoteFormProps {
   variant?: 'default' | 'sidebar';
 }
