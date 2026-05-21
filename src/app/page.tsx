@@ -35,8 +35,8 @@ export default function Home() {
         '@type': 'Organization',
         name: 'Cover4You',
         alternateName: 'PublicLiabilityInsurance.co.nz',
-        url: 'https://publicliabilityinsurance.co.nz',
-        logo: 'https://publicliabilityinsurance.co.nz/logo.png',
+        url: 'https://www.publicliabilityinsurance.co.nz',
+        logo: 'https://www.publicliabilityinsurance.co.nz/logo.png',
         contactPoint: {
           '@type': 'ContactPoint',
           email: 'hello@cover4you.co.nz',
@@ -53,7 +53,7 @@ export default function Home() {
         '@type': 'InsuranceAgency',
         name: 'PublicLiabilityInsurance.co.nz',
         description: 'Broker referral service comparing public liability insurance from up to 15 insurers for businesses, trades, schools, and public venues.',
-        url: 'https://publicliabilityinsurance.co.nz',
+        url: 'https://www.publicliabilityinsurance.co.nz',
         email: 'hello@cover4you.co.nz',
         areaServed: { '@type': 'Country', name: 'New Zealand' },
         serviceType: 'Public Liability Insurance Comparison and Referral',
@@ -66,7 +66,7 @@ export default function Home() {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'PublicLiabilityInsurance.co.nz',
-        url: 'https://publicliabilityinsurance.co.nz',
+        url: 'https://www.publicliabilityinsurance.co.nz',
         description: 'Compare public liability insurance from up to 15 insurers. Expert advice from licensed NZ brokers.',
         publisher: {
           '@type': 'Organization',

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: business.metaTitle,
     description: business.metaDescription,
-    alternates: { canonical: `https://publicliabilityinsurance.co.nz/businesses/${business.slug}/` },
+    alternates: { canonical: `https://www.publicliabilityinsurance.co.nz/businesses/${business.slug}/` },
     openGraph: {
       title: business.metaTitle,
       description: business.metaDescription,
@@ -41,20 +41,20 @@ export default async function BusinessPage({ params }: { params: Promise<{ slug:
     provider: {
       '@type': 'Organization',
       name: 'Cover4You',
-      url: 'https://publicliabilityinsurance.co.nz',
+      url: 'https://www.publicliabilityinsurance.co.nz',
     },
     areaServed: { '@type': 'Country', name: 'New Zealand' },
     serviceType: 'Public Liability Insurance',
-    url: `https://publicliabilityinsurance.co.nz/businesses/${business.slug}/`,
+    url: `https://www.publicliabilityinsurance.co.nz/businesses/${business.slug}/`,
   };
 
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://publicliabilityinsurance.co.nz/' },
-      { '@type': 'ListItem', position: 2, name: 'Businesses', item: 'https://publicliabilityinsurance.co.nz/businesses/' },
-      { '@type': 'ListItem', position: 3, name: business.name, item: `https://publicliabilityinsurance.co.nz/businesses/${business.slug}/` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.publicliabilityinsurance.co.nz/' },
+      { '@type': 'ListItem', position: 2, name: 'Businesses', item: 'https://www.publicliabilityinsurance.co.nz/businesses/' },
+      { '@type': 'ListItem', position: 3, name: business.name, item: `https://www.publicliabilityinsurance.co.nz/businesses/${business.slug}/` },
     ],
   };
 

@@ -4,15 +4,21 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.publicliabilityinsurance.co.nz'),
   title: 'Public Liability Insurance NZ | Compare Quotes & Save | PublicLiabilityInsurance.co.nz',
   description:
     'Compare public liability insurance quotes from leading NZ providers. Get tailored coverage for your business, industry, or sector. Fast, simple, and transparent comparison.',
+  alternates: {
+    canonical: 'https://www.publicliabilityinsurance.co.nz/',
+  },
   openGraph: {
     title: 'Public Liability Insurance NZ | Compare Quotes & Save',
     description:
       'Find the best public liability insurance for your business in New Zealand. Compare quotes instantly.',
     type: 'website',
     locale: 'en_NZ',
+    url: 'https://www.publicliabilityinsurance.co.nz/',
+    siteName: 'PublicLiabilityInsurance.co.nz',
   },
   twitter: {
     card: 'summary_large_image',

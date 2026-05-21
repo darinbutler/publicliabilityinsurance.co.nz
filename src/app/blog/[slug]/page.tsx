@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Share this article</p>
               <div className="flex flex-wrap gap-2">
                 <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https://publicliabilityinsurance.co.nz/blog/${slug}/`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://www.publicliabilityinsurance.co.nz/blog/${slug}/`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-[#1877F2] text-white rounded-lg hover:opacity-90 transition text-sm font-semibold"
@@ -165,7 +165,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   Facebook
                 </a>
                 <a
-                  href={`https://twitter.com/intent/tweet?url=https://publicliabilityinsurance.co.nz/blog/${slug}/&text=${encodeURIComponent(post.title)}`}
+                  href={`https://twitter.com/intent/tweet?url=https://www.publicliabilityinsurance.co.nz/blog/${slug}/&text=${encodeURIComponent(post.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-[#1DA1F2] text-white rounded-lg hover:opacity-90 transition text-sm font-semibold"
@@ -173,7 +173,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   Twitter / X
                 </a>
                 <a
-                  href={`https://www.linkedin.com/sharing/share-offsite/?url=https://publicliabilityinsurance.co.nz/blog/${slug}/`}
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.publicliabilityinsurance.co.nz/blog/${slug}/`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white rounded-lg hover:opacity-90 transition text-sm font-semibold"
@@ -296,26 +296,26 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               '@type': 'Article',
               mainEntityOfPage: {
                 '@type': 'WebPage',
-                '@id': `https://publicliabilityinsurance.co.nz/blog/${slug}/`,
+                '@id': `https://www.publicliabilityinsurance.co.nz/blog/${slug}/`,
               },
               headline: post.title,
               description: post.excerpt,
-              image: post.image || 'https://publicliabilityinsurance.co.nz/og-image.png',
+              image: post.image || 'https://www.publicliabilityinsurance.co.nz/og-image.png',
               datePublished: post.date,
               dateModified: post.date,
-              url: `https://publicliabilityinsurance.co.nz/blog/${slug}/`,
+              url: `https://www.publicliabilityinsurance.co.nz/blog/${slug}/`,
               author: {
                 '@type': 'Organization',
                 name: 'Cover4You',
-                url: 'https://publicliabilityinsurance.co.nz',
+                url: 'https://www.publicliabilityinsurance.co.nz',
               },
               publisher: {
                 '@type': 'Organization',
                 name: 'Cover4You',
-                url: 'https://publicliabilityinsurance.co.nz',
+                url: 'https://www.publicliabilityinsurance.co.nz',
                 logo: {
                   '@type': 'ImageObject',
-                  url: 'https://publicliabilityinsurance.co.nz/logo.png',
+                  url: 'https://www.publicliabilityinsurance.co.nz/logo.png',
                   width: 200,
                   height: 60,
                 },
@@ -333,9 +333,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://publicliabilityinsurance.co.nz/' },
-                { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://publicliabilityinsurance.co.nz/blog/' },
-                { '@type': 'ListItem', position: 3, name: post.title, item: `https://publicliabilityinsurance.co.nz/blog/${slug}/` },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.publicliabilityinsurance.co.nz/' },
+                { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.publicliabilityinsurance.co.nz/blog/' },
+                { '@type': 'ListItem', position: 3, name: post.title, item: `https://www.publicliabilityinsurance.co.nz/blog/${slug}/` },
               ],
             }),
           }}

@@ -5,7 +5,7 @@ import { businessTypes } from '@/data/business-types';
 export const metadata: Metadata = {
   title: 'Public Liability Insurance by Business Type NZ | Cover4You',
   description: 'Find public liability insurance tailored to your profession in New Zealand. Builders, dog walkers, cafes, retailers, cleaners and 25+ more business types covered.',
-  alternates: { canonical: 'https://publicliabilityinsurance.co.nz/businesses/' },
+  alternates: { canonical: 'https://www.publicliabilityinsurance.co.nz/businesses/' },
 };
 
 const categories = [
